@@ -68,7 +68,7 @@ export const SideBar = () => {
 const Container = styled.aside`
   display: flex;
   width: 220px;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 55px);
 `;
 
 const SectionOne = styled.section`
@@ -124,13 +124,15 @@ const SectionTwo = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0 15px;
+    margin-top: 10px;
+    
     > span {
       font-size: 20px;
       margin-top: -12px;
     }
   }
-
+  
   > ul {
     margin: 10px 0;
 
@@ -153,6 +155,7 @@ const SectionTwo = styled.section`
 `;
 
 const SwitchMenu = styled.article`
+  padding: 0 15px;
   margin-top: 15px;
   display: flex;
   align-items: center;

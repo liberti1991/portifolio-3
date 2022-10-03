@@ -4,11 +4,16 @@ import { BiGitBranch, BiCloudUpload, BiCodeCurly } from "react-icons/bi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { FiAlertTriangle } from "react-icons/fi";
 import { RiSignalTowerFill } from "react-icons/ri";
+import { VscRemote } from "react-icons/vsc";
 
 export const Footer = () => {
   return (
     <Container>
       <div>
+        <span>
+          <VscRemote />
+          <p>WSL: Ubuntu</p>
+        </span>
         <div>
           <BiGitBranch />
           <small>Master*</small>
@@ -53,8 +58,8 @@ const Container = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
-  height: 30px;
+  padding-right: 10px;
+  height: 25px;
   font-size: 14px;
   background: #1f2428;
   border-top: 1px solid #191d20;
@@ -63,9 +68,24 @@ const Container = styled.footer`
     display: flex;
     align-items: center;
     gap: 5px;
+    height: 100%;
+
+    > span {
+      height: 100%;
+      background-color: #a74fa7;
+      color: black;
+      font-size: 12px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding: 0 10px;
+    }
 
     > div {
-      margin: 5px;
+      padding: 0 5px;
+      :hover {
+        background-color: #30363d;
+      }
     }
   }
 `;
