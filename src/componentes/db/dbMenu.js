@@ -16,7 +16,7 @@ export const dbMenu = [
     color: "#61DAFB",
     color2: '#65C147',
     icon2: <VscFiles />,
-    to: "/",
+    to: "/home",
   },{
     id: 2,
     title: "sobre.html",
@@ -61,6 +61,6 @@ export const dbMenu = [
     color: "",
     color2: '#65C147',
     icon2: <VscSettingsGear />,
-    to: "",
+    to: "/wq",
   },
 ];

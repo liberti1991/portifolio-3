@@ -4,25 +4,42 @@ import { BsChevronRight, BsChevronDown } from "react-icons/bs";
 
 import { useState } from "react";
 import { dbMenu } from "../db/dbMenu";
+import { NavLink } from "react-router-dom";
 
 export const SideBar = () => {
   const [menu, setMenu] = useState(true);
   const handleMenu = () => setMenu((previousState) => !previousState);
 
+  //excluindo o icone da engrenagem
+  const listOne = dbMenu.slice(0, 5);
+
+  //separando itens em expecifico e depois concatando ambos
+  const temp1 = dbMenu.slice(1, 2);
+  const temp2 = dbMenu.slice(5, 6);
+  const listTwo = temp1.concat(temp2);
+
   return (
     <Container>
       <SectionOne>
-        <ListOne>
-          {dbMenu.map((item) => (
-            <li key={item.id}>{item.icon2}</li>
+        <ul>
+          {listOne.map((item) => (
+            <li key={item.id}>
+              <NavLink activeclassname="active" to={item.to}>
+                {item.icon2}
+              </NavLink>
+            </li>
           ))}
-        </ListOne>
+        </ul>
 
-        <ListTwo>
-          {dbMenu.map((item) => (
-            <li key={item.id}>{item.icon2}</li>
+        <ul>
+          {listTwo.map((item) => (
+            <li key={item.id}>
+              <NavLink activeclassname="active" to={item.to}>
+                {item.icon2}
+              </NavLink>
+            </li>
           ))}
-        </ListTwo>
+        </ul>
       </SectionOne>
 
       <SectionTwo>
@@ -33,10 +50,12 @@ export const SideBar = () => {
         <SwitchMenu>{!menu ? <BsChevronRight onClick={handleMenu} /> : <BsChevronDown onClick={handleMenu} />} PORTFÓLIO</SwitchMenu>
         {menu && (
           <ul>
-            {dbMenu.map((item) => (
-              <li key={item.id} style={{ color: `${item.color}` }}>
-                {item.icon1}
-                <span style={{ color : `${item.color2}`}}>{item.title}</span>
+            {listOne.map((item) => (
+              <li key={item.id}>
+                <NavLink to={item.to} style={{ color: `${item.color}` }}>
+                  {item.icon1}
+                  <span style={{ color: `${item.color2}` }}>{item.title}</span>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -48,7 +67,7 @@ export const SideBar = () => {
 
 const Container = styled.aside`
   display: flex;
-  width: 200px;
+  width: 220px;
   height: calc(100vh - 60px);
 `;
 
@@ -67,49 +86,35 @@ const SectionOne = styled.section`
     display: flex;
 
     > li {
-      flex-direction: column;
-      align-items: center;
-      display: flex;
-      width: 100%;
-      padding: 10px 0;
-
-      > svg {
-        font-size: 35px;
-        color: #a1a1a6;
+      .active {
+        border-left: 2px solid red;
       }
 
-      :hover {
-        background: #1f2428;
+      width: 100%;
+
+      > a {
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+
         > svg {
-          color: #fff;
+          font-size: 35px;
+          color: #a1a1a6;
+        }
+
+        :hover {
+          background: #1f2428;
+          > svg {
+            color: #fff;
+          }
         }
       }
     }
   }
 `;
 
-const ListOne = styled.ul`
-  > li {
-    :nth-child(2),
-    :nth-child(6) {
-      display: none;
-    }
-  }
-`;
-
-const ListTwo = styled.ul`
-  > li {
-    :nth-child(1),
-    :nth-child(3),
-    :nth-child(4),
-    :nth-child(5) {
-      display: none;
-    }
-  }
-`;
-
 const SectionTwo = styled.section`
-  padding: 15px;
   background: #1f2428;
   width: 75%;
   font-size: 12px;
@@ -130,11 +135,19 @@ const SectionTwo = styled.section`
     margin: 10px 0;
 
     > li {
-      font-size: 14px;
-      display: flex;
-      align-items: start;
-      padding: 4px 0;
-      gap: 10px;
+      padding: 0 15px;
+
+      > a {
+        font-size: 14px;
+        display: flex;
+        align-items: start;
+        padding: 4px 0;
+        gap: 10px;
+      }
+
+      :hover {
+        background-color: #30363d;
+      }
     }
   }
 `;

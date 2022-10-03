@@ -57,6 +57,7 @@ const Container = styled.footer`
   height: 30px;
   font-size: 14px;
   background: #1f2428;
+  border-top: 1px solid #191d20;
 
   div {
     display: flex;

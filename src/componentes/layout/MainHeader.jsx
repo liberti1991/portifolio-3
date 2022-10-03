@@ -4,49 +4,38 @@ import { AiOutlineMinus, AiOutlineClose } from "react-icons/ai";
 import { BiSquareRounded } from "react-icons/bi";
 
 import vsc from "../../assets/logo.svg";
-import { SideBar } from "./SideBar";
-import { SecondaryHeader } from "./SecondaryHeader";
-import { Footer } from "./Footer";
 
 export const MainHeader = () => {
   return (
-    <>
-      <Container>
-        <ul>
-          <li>
-            <img src={vsc} alt="logo visual studio code" />
-          </li>
-          <li>Arquivo</li>
-          <li>Editar</li>
-          <li>Seleção</li>
-          <li>Ver</li>
-          <li>Acessar</li>
-          <li>Executar</li>
-          <li>Terminal</li>
-          <li>Ajuda</li>
-        </ul>
+    <Container>
+      <ul>
+        <li>
+          <img src={vsc} alt="logo visual studio code" />
+        </li>
+        <li>Arquivo</li>
+        <li>Editar</li>
+        <li>Seleção</li>
+        <li>Ver</li>
+        <li>Acessar</li>
+        <li>Executar</li>
+        <li>Terminal</li>
+        <li>Ajuda</li>
+      </ul>
 
-        <p>Rodrigo Liberti - Visual Studio Code</p>
+      <p>Rodrigo Liberti - Visual Studio Code</p>
 
-        <ul>
-          <li>
-            <AiOutlineMinus />
-          </li>
-          <li>
-            <BiSquareRounded />
-          </li>
-          <li>
-            <AiOutlineClose />
-          </li>
-        </ul>
-      </Container>
-
-      <AsideContainer>
-        <SideBar />
-        <SecondaryHeader />
-      </AsideContainer>
-      <Footer />
-    </>
+      <ul>
+        <li>
+          <AiOutlineMinus />
+        </li>
+        <li>
+          <BiSquareRounded />
+        </li>
+        <li>
+          <AiOutlineClose />
+        </li>
+      </ul>
+    </Container>
   );
 };
 
@@ -85,6 +74,3 @@ const Container = styled.section`
   }
 `;
 
-const AsideContainer = styled.div`
-  display: flex;
-`;

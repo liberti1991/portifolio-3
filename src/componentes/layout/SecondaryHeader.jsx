@@ -1,13 +1,17 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+
 import { dbMenu } from "../db/dbMenu";
 
 export const SecondaryHeader = () => {
   return (
     <List>
       {dbMenu.map((item) => (
-        <li key={item.id} style={{ color: `${item.color}` }}>
-          {item.icon1}
-          <span style={{ color : `${item.color2}`}}>{item.title}</span>
+        <li key={item.id}>
+          <NavLink activeclassname="active" to={item.to} style={{ color: `${item.color}` }}>
+            {item.icon1}
+            <span style={{ color: `${item.color2}` }}>{item.title}</span>
+          </NavLink>
         </li>
       ))}
     </List>
@@ -16,19 +20,29 @@ export const SecondaryHeader = () => {
 
 const List = styled.ul`
   width: 100%;
-  height: 40px;
+  height: 35px;
   background: #1f2428;
   display: flex;
   align-items: center;
 
   > li {
+    .active {
+      border-top: 1px solid red;
+      height: 100%;
+    }
+    
     height: 100%;
-    font-size: 14px;
-    padding: 0 20px;
+    border: 1px solid #30363d;
     display: flex;
     align-items: center;
-    gap: 10px;
-    border: 1px solid #30363d;
+    
+    a {
+      align-items: center;
+      display: flex;
+      padding: 0 20px;
+      font-size: 14px;
+      gap: 10px;
+    }
 
     :nth-child(6) {
       display: none;
