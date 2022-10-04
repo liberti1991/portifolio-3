@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import { BsFileEarmarkCode } from "react-icons/bs";
+import { MdDoubleArrow } from "react-icons/md";
 
 import programmer from "../../assets/Programmer.gif";
+
 import { HomeCode } from "./HomeCode";
 
 export const Home = () => {
@@ -17,15 +20,23 @@ export const Home = () => {
           <Content>
             <h1>Rodrigo Liberti</h1>
             <p>Desenvolvedor Front-End</p>
-            <CodeButton onClick={handlePage}>
-              <BsFileEarmarkCode />
-              Ver código fonte...
-            </CodeButton>
+            <div>
+              <CodeButton onClick={handlePage}>
+                <BsFileEarmarkCode />
+                Ver código fonte...
+              </CodeButton>
+              <CodeButton>
+                <NavLink to="/projetos">
+                  <MdDoubleArrow />
+                  Meus Projetos...
+                </NavLink>
+              </CodeButton>
+            </div>
           </Content>
           <img src={programmer} alt="programer img" />
         </Container>
       ) : (
-        <HomeCode handlePage={handlePage}/>
+        <HomeCode handlePage={handlePage} />
       )}
     </>
   );
@@ -40,6 +51,16 @@ const Container = styled.div`
 
 const Content = styled.span`
   padding: 50px;
+
+  > p {
+    font-size: 16px;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 
   > h1 {
     font-size: 2.5rem;
@@ -58,7 +79,18 @@ const CodeButton = styled.div`
   border-radius: 10px;
   border: 1px solid #191d20;
   background-color: #1f2428;
-  transition: .3s;
+  transition: 0.3s;
+
+  svg {
+    font-size: 18px;
+  }
+
+  > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+  }
 
   :hover {
     background-color: #1f242870;

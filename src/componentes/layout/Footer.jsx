@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { BiGitBranch, BiCloudUpload, BiCodeCurly } from "react-icons/bi";
+import { BiGitBranch, BiCloudUpload, BiCodeCurly, BiCheckDouble } from "react-icons/bi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { FiAlertTriangle } from "react-icons/fi";
 import { RiSignalTowerFill } from "react-icons/ri";
@@ -47,6 +47,7 @@ export const Footer = () => {
           <small>Reload</small>
         </div>
         <div>
+          <BiCheckDouble />
           <small>Prettier</small>
         </div>
       </div>
