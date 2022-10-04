@@ -58,6 +58,7 @@ const CodeButton = styled.div`
   border-radius: 10px;
   border: 1px solid #191d20;
   background-color: #1f2428;
+  transition: .3s;
 
   :hover {
     background-color: #1f242870;

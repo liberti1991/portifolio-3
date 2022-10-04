@@ -10,150 +10,591 @@ export const HomeCode = ({ handlePage }) => {
   const e = ")";
   const f = "[";
   const g = "]";
+  const h = "<>";
+  const i = "</>";
+  const j = "<";
+  const k = ">";
+  const l = "</";
+  const m = "/>";
 
+  const numeros = [];
+
+  for (let i = 1; i <= 66; i++) {
+    numeros.push(i);
+  }
+
+  console.log(numeros);
   return (
     <Container>
+      <Number>
+        {numeros.map((item) => (
+          <span key={item}>{item}</span>
+        ))}
+      </Number>
       <Content>
         <div>
-          <h1>import</h1>
-          <h2>styled</h2>
-          <h1>from</h1>
-          <h3>"styled-components"</h3>
-          <h2>;</h2>
+          <Pink>import</Pink>
+          <White>styled</White>
+          <Pink>from</Pink>
+          <Yellow>
+            "styled-components" <White>;</White>
+          </Yellow>
         </div>
         <div>
-          <h1>import</h1>
-          <h3>{a}</h3>
-          <h2>useState</h2>
-          <h3>{b}</h3>
-          <h1>from</h1>
-          <h3>"react"</h3>
-          <h2>;</h2>
-        </div>
-        <br />
-        <div>
-          <h1>import</h1>
-          <h3>{a}</h3>
-          <h2>BsFileEarmarkCode</h2>
-          <h3>{b}</h3>
-          <h1>from</h1>
-          <h3>"react-icons/bs"</h3>
-          <h2>;</h2>
+          <Pink>import</Pink>
+          <Yellow>{a}</Yellow>
+          <White>useState</White>
+          <Yellow>{b}</Yellow>
+          <Pink>from</Pink>
+          <Yellow>
+            "react" <White>;</White>
+          </Yellow>
         </div>
         <br />
         <div>
-          <h1>import</h1>
-          <h2>programmer</h2>
-          <h1>from</h1>
-          <h3>"../../assets/Programmer.gif"</h3>
-          <h2>;</h2>
+          <Pink>import</Pink>
+          <Yellow>{a}</Yellow>
+          <White>BsFileEarmarkCode</White>
+          <Yellow>{b}</Yellow>
+          <Pink>from</Pink>
+          <Yellow>
+            "react-icons/bs" <White>;</White>
+          </Yellow>
         </div>
         <br />
         <div>
-          <h1>import</h1>
-          <h3>{a}</h3>
-          <h2>HomeCode</h2>
-          <h3>{b}</h3>
-          <h1>from</h1>
-          <h3>"./HomeCodes"</h3>
-          <h2>;</h2>
+          <Pink>import</Pink>
+          <White>programmer</White>
+          <Pink>from</Pink>
+          <Yellow>
+            "../../assets/Programmer.gif" <White>;</White>
+          </Yellow>
         </div>
         <br />
-      </Content>
-      <Content>
         <div>
-          <h1>export</h1>
-          <h1>const</h1>
-          <h4>Home</h4>
-          <h1> = </h1>
-          <h3>{d}</h3>
-          <h3>{e}</h3>
-          <h1>{c}</h1>
-          <h3>{a}</h3>
+          <Pink>import</Pink>
+          <Yellow>{a}</Yellow>
+          <White>HomeCode</White>
+          <Yellow>{b}</Yellow>
+          <Pink>from</Pink>
+          <Yellow>"./HomeCode"</Yellow>
+          <White>;</White>
+        </div>
+        <br />
+        <div>
+          <Pink>export</Pink>
+          <Pink>const</Pink>
+          <Green>Home</Green>
+          <Pink> = </Pink>
+          <Orange>{d}</Orange>
+          <Orange>{e}</Orange>
+          <Pink>{c}</Pink>
+          <Yellow>{a}</Yellow>
         </div>
         <BorderLeft>
           <section>
             <div>
-              <h1>const</h1>
-              <h6>{f}</h6>
-              <p>page</p>
-              <h2>,</h2>
-              <h4>pageSet</h4>
-              <h6>{g}</h6>
-              <h1> = </h1>
-              <h3>{d}</h3>
-              <p>true</p>
-              <h3>{e}</h3>
-              <h2>;</h2>
+              <Pink>const</Pink>
+              <Blue>{f}</Blue>
+              <Purple>
+                page<White>,</White>
+              </Purple>
+              <Green>pageSet</Green>
+              <Blue>{g}</Blue>
+              <Pink> = </Pink>
+              <Green>
+                useState<Yellow>{d}</Yellow>
+              </Green>
+              <Purple>true</Purple>
+              <Yellow>{e}</Yellow>
+              <White>;</White>
             </div>
-
             <div>
-              <h1>const</h1>
-              <h4>handlePage</h4>
-              <h1> = </h1>
-              <h3>{d}</h3>
-              <h3>{e}</h3>
-              <h1>{c}</h1>
-              <h4>pageSet</h4>
-              <h3>{d}</h3>
-              <h3>{d}</h3>
-              <h5>previousState</h5>
-              <h1>{c}</h1>
-              <h1>!</h1>
-              <h5>previousState</h5>
-              <h3>{e}</h3>
-              <h2>;</h2>
+              <Pink>const</Pink>
+              <Green>handlePage</Green>
+              <Pink> = </Pink>
+              <Orange>{d}</Orange>
+              <Orange>{e}</Orange>
+              <Pink>{c}</Pink>
+              <Green>
+                pageSet
+                <Orange>
+                  {d}
+                  <Red>
+                    {d}
+                    <Orange>
+                      <i>previousState</i>
+                    </Orange>
+                    <Red>{e}</Red>
+                  </Red>
+                </Orange>
+              </Green>
+
+              <Pink>{c}</Pink>
+              <Pink>!</Pink>
+              <Orange>
+                <i>previoState</i>
+                <Orange>{e}</Orange>
+              </Orange>
+              <White>;</White>
+            </div>
+            <br />
+            <div>
+              <Pink>return</Pink>
+              <Orange>{d}</Orange>
+              <br />
+            </div>
+            <BorderLeft>
+              <section>
+                <div>
+                  <White>{h}</White>
+                </div>
+                <BorderLeft>
+                  <section>
+                    <div>
+                      <Orange>{a}</Orange>
+                      <p>page</p>
+                      <Pink>?</Pink>
+                      <Red>{d}</Red>
+                    </div>
+                    <BorderLeft>
+                      <section>
+                        <div>
+                          <White>
+                            {j}
+                            <Blue>
+                              <i>Container</i>
+                            </Blue>
+                            <White>{k}</White>
+                          </White>
+                        </div>
+                        <BorderLeft>
+                          <section>
+                            <div>
+                              <White>
+                                {j}
+                                <Blue>
+                                  <i>Content</i>
+                                </Blue>
+                                <White>{k}</White>
+                              </White>
+                            </div>
+                            <BorderLeft>
+                              <section>
+                                <div>
+                                  <White>
+                                    {j}
+                                    <Pink>h1</Pink>
+                                    <White>{k}</White>
+                                  </White>
+                                  <White>Rodrigo Liberti</White>
+                                  <White>
+                                    {l}
+                                    <Pink>
+                                      h1<White>{k}</White>
+                                    </Pink>
+                                  </White>
+                                </div>
+                                <div>
+                                  <White>
+                                    {j}
+                                    <Pink>p</Pink>
+                                    <White>{k}</White>
+                                  </White>
+                                  <White>Desenvolvedor Front-End</White>
+                                  <White>
+                                    {l}
+                                    <Pink>p</Pink>
+                                    <White>{k}</White>
+                                  </White>
+                                </div>
+                                <div>
+                                  <White>
+                                    {j}
+                                    <Blue>
+                                      <i>CodeButton</i>
+                                    </Blue>
+                                  </White>
+                                  <Green>onClick</Green>
+                                  <Pink> =</Pink>
+                                  <Brown>
+                                    {a}
+                                    <Green>handlePage</Green>
+                                    <Brown>{b}</Brown>
+                                    <White>{k}</White>
+                                  </Brown>
+                                </div>
+                                <BorderLeft>
+                                  <section>
+                                    <div>
+                                      <White>
+                                        {j}
+                                        <Blue>
+                                          <i>BsFileEarmarkCode</i>
+                                        </Blue>
+                                      </White>
+                                      <White>{m}</White>
+                                    </div>
+                                    <White>Ver código fonte...</White>
+                                  </section>
+                                </BorderLeft>
+                                <div>
+                                  <White>{l}</White>
+                                  <Blue>
+                                    <i>CodeButton</i>
+                                    <White>{k}</White>
+                                  </Blue>
+                                </div>
+                              </section>
+                            </BorderLeft>
+                            <div>
+                              <White>{l}</White>
+                              <Blue>
+                                <i>Content</i>
+                                <White>{k}</White>
+                              </Blue>
+                            </div>
+                            <div>
+                              <White>
+                                {j}
+                                <Pink>img</Pink>
+                              </White>
+                              <Green>
+                                src<Pink>=</Pink>
+                                <Brown>{a}</Brown>
+                                <Purple>programmer</Purple>
+                                <Brown>{b}</Brown>
+                              </Green>
+                              <Green>
+                                alt<Pink>=</Pink>
+                                <Yellow>"programmer img"</Yellow>
+                              </Green>
+                              <White>{m}</White>
+                            </div>
+                          </section>
+                        </BorderLeft>
+                        <div>
+                          <White>{l}</White>
+                          <Blue>
+                            <i>Container</i>
+                            <White>{k}</White>
+                          </Blue>
+                        </div>
+                      </section>
+                    </BorderLeft>
+                  </section>
+                </BorderLeft>
+                <BorderLeft>
+                  <section>
+                    <div>
+                      <Red>{e}</Red>
+                      <White>:</White>
+                      <Red>{d}</Red>
+                    </div>
+                    <BorderLeft>
+                      <section>
+                        <div>
+                          <White>
+                            {j}
+                            <Blue>HomeCode</Blue>
+                          </White>
+                          <Green>
+                            <i>handlePage</i>
+                            <Pink>=</Pink>
+                            <Brown>{a}</Brown>
+                            <Green>handlePage</Green>
+                            <Brown>{b}</Brown>
+                          </Green>
+                          <White>{m}</White>
+                        </div>
+                      </section>
+                    </BorderLeft>
+                  </section>
+                </BorderLeft>
+                <BorderLeft>
+                  <section>
+                    <div>
+                      <Red>{e}</Red>
+                      <Yellow>{b}</Yellow>
+                    </div>
+                  </section>
+                </BorderLeft>
+                <div>
+                  <White>{i}</White>
+                </div>
+              </section>
+            </BorderLeft>
+            <div>
+              <Orange>{e}</Orange>
+              <White>;</White>
             </div>
           </section>
         </BorderLeft>
+        <div>
+          <Yellow>{b}</Yellow>
+          <White>;</White>
+        </div>
+        <br />
+        <div>
+          <Pink>Const</Pink>
+          <Purple>Container</Purple>
+          <Pink>=</Pink>
+          <Purple>
+            Styled<White>.div</White>
+            <Yellow>`</Yellow>
+          </Purple>
+        </div>
+        <BorderLeft>
+          <section>
+            <div>
+              <Pink>display:</Pink>
+              <Purple>
+                grid<White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>grid-template-columns:</Pink>
+              <Purple>
+                1<Pink>fr</Pink>
+              </Purple>
+              <Purple>
+                1<Pink>fr</Pink>
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>align-items:</Pink>
+              <Purple>
+                center<White>;</White>
+              </Purple>
+            </div>
+          </section>
+        </BorderLeft>
+        <div>
+          <Yellow>
+            `<White>;</White>
+          </Yellow>
+        </div>
+        <br />
+        <div>
+          <Pink>Const</Pink>
+          <Purple>Content</Purple>
+          <Pink>=</Pink>
+          <Purple>
+            Styled<White>.span</White>
+            <Yellow>`</Yellow>
+          </Purple>
+        </div>
+        <BorderLeft>
+          <section>
+            <div>
+              <Pink>padding:</Pink>
+              <Purple>
+                50<Pink>px</Pink>
+                <White>;</White>
+              </Purple>
+            </div>
+            <br />
+            <div>
+              <White>{k}</White>
+              <Pink>h1</Pink>
+              <Yellow>{a}</Yellow>
+            </div>
+            <BorderLeft>
+              <section>
+                <div>
+                  <Pink>font-size:</Pink>
+                  <Purple>
+                    2.5<Pink>rem</Pink>
+                    <White>;</White>
+                  </Purple>
+                </div>
+                <div>
+                  <Pink>margin-bottom:</Pink>
+                  <Purple>
+                    10<Pink>px</Pink>
+                    <White>;</White>
+                  </Purple>
+                </div>
+              </section>
+            </BorderLeft>
+            <Yellow>{b}</Yellow>
+          </section>
+        </BorderLeft>
+        <div>
+          <Yellow>
+            `<White>;</White>
+          </Yellow>
+        </div>
+        <br />
+        <div>
+          <Pink>Const</Pink>
+          <Purple>CodeButton</Purple>
+          <Pink>=</Pink>
+          <Purple>
+            Styled<White>.div</White>
+            <Yellow>`</Yellow>
+          </Purple>
+        </div>
+        <BorderLeft>
+          <section>
+            <div>
+              <Pink>widht:</Pink>
+              <Purple>
+                200<Pink>px</Pink>
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>padding:</Pink>
+              <Purple>
+                10<Pink>px</Pink>
+              </Purple>
+              <Purple>
+                10<Pink>px</Pink>
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>margin-top:</Pink>
+              <Purple>
+                50<Pink>px</Pink>
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>display:</Pink>
+              <Purple>
+                flex
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>align-items:</Pink>
+              <Purple>
+                center
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>cursor:</Pink>
+              <Purple>
+                pointer
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>border-radius:</Pink>
+              <Purple>
+                10<Pink>px</Pink>
+                <White>;</White>
+              </Purple>
+            </div>
+            <div>
+              <Pink>border:</Pink>
+              <Purple>
+                1<Pink>px</Pink>
+              </Purple>
+              <Purple>solid</Purple>
+              <White>#191d20;</White>
+            </div>
+            <div>
+              <Pink>background-color:</Pink>
+              <White>#1f2428;</White>
+            </div>
+            <div>
+              <Pink>transition:</Pink>
+              <Purple>
+                .3<Pink>s</Pink>
+                <White>;</White>
+              </Purple>
+            </div>
+            <br />
+            <div>
+              <Pink>
+                :<Green>hover</Green>
+              </Pink>
+              <Yellow>{a}</Yellow>
+            </div>
+            <BorderLeft>
+              <section>
+                <div>
+                  <Pink>background-color:</Pink>
+                  <White>#1f242870;</White>
+                </div>
+              </section>
+            </BorderLeft>
+            <Yellow>{b}</Yellow>
+          </section>
+        </BorderLeft>
+        <div>
+          <Yellow>
+            `<White>;</White>
+          </Yellow>
+        </div>
       </Content>
-      <CodeButton onClick={handlePage}>
+      {/* <CodeButton onClick={handlePage}>
         <BsFileEarmarkCode />
         Ver código fonte...
-      </CodeButton>
+      </CodeButton> */}
     </Container>
   );
 };
 
 const Container = styled.div`
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
+  height: calc(100vh - 90px);
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 20px auto;
+  padding: 0 30px;
+  span {
     font-size: 16px;
     font-weight: 100;
   }
+`;
 
-  h1 {
-    color: #ff79c6;
-  }
+const Number = styled.div`
+  padding-right: 15px;
+  color: #5f43a1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+`;
 
-  h2 {
-    color: #fff;
-  }
+const Pink = styled.span`
+  color: #ff79c6;
+`;
 
-  h3 {
-    color: #f1fa8c;
-  }
+const White = styled.span`
+  color: #fff;
+`;
 
-  h4 {
-    color: #50fa7b;
-  }
+const Yellow = styled.span`
+  color: #f1fa8c;
+`;
 
-  h5 {
-    color: #ffb86c;
-  }
+const Green = styled.span`
+  color: #50fa7b;
+`;
 
-  h6 {
-    color: #8be9fd;
-  }
+const Orange = styled.span`
+  color: #ffb86c;
+`;
 
-  p {
-    color: #bd93f9;
-  }
+const Brown = styled.span`
+  color: #996328;
+`;
+
+const Blue = styled.span`
+  color: #8be9fd;
+`;
+
+const Purple = styled.span`
+  color: #bd93f9;
+`;
+
+const Red = styled.span`
+  color: red;
 `;
 
 const Content = styled.div`
@@ -165,10 +606,10 @@ const Content = styled.div`
 `;
 
 const BorderLeft = styled.div`
-  border-left: 1px solid silver;
+  border-left: 1px solid #7774746f;
 
   > section {
-    padding-left: 10px;
+    padding-left: 15px;
   }
 `;
 
@@ -183,6 +624,7 @@ const CodeButton = styled.div`
   border-radius: 10px;
   border: 1px solid #191d20;
   background-color: #1f2428;
+  transition: 0.3s;
 
   :hover {
     background-color: #1f242870;
