@@ -533,10 +533,10 @@ export const HomeCode = ({ handlePage }) => {
           </Yellow>
         </div>
       </Content>
-      {/* <CodeButton onClick={handlePage}>
+      <CodeButton onClick={handlePage}>
         <BsFileEarmarkCode />
         Ver código fonte...
-      </CodeButton> */}
+      </CodeButton>
     </Container>
   );
 };
