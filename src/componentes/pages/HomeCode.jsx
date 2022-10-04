@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { BsFileEarmarkCode } from "react-icons/bs";
 
 export const HomeCode = ({ handlePage }) => {
+  
   const icons = ["{", "}", "=>", "(", ")", "[", "]", "<>", "</>", "<", ">", "</", "/>"];
 
   const numeros = [];
