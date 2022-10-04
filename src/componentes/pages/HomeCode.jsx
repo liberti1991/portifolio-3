@@ -133,7 +133,7 @@ export const HomeCode = ({ handlePage }) => {
               <Pink>{c}</Pink>
               <Pink>!</Pink>
               <Orange>
-                <i>previoState</i>
+                <i>previousState</i>
                 <Orange>{e}</Orange>
               </Orange>
               <White>;</White>
