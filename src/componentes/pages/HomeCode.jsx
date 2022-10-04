@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-import { BsFileEarmarkCode } from "react-icons/bs";
+import { GiReturnArrow } from "react-icons/gi";
 
 export const HomeCode = ({ handlePage }) => {
-  
   const icons = ["{", "}", "=>", "(", ")", "[", "]", "<>", "</>", "<", ">", "</", "/>"];
 
   const numeros = [];
@@ -749,8 +748,8 @@ export const HomeCode = ({ handlePage }) => {
         </div>
       </Content>
       <CodeButton onClick={handlePage}>
-        <BsFileEarmarkCode />
-        Ver código fonte...
+        <GiReturnArrow />
+        Voltar a Home...
       </CodeButton>
     </Container>
   );
@@ -774,6 +773,43 @@ const Number = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+`;
+
+const Content = styled.div`
+  position: relative;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+`;
+
+const BorderLeft = styled.div`
+  border-left: 1px solid #7774746f;
+
+  > section {
+    padding-left: 15px;
+  }
+`;
+
+const CodeButton = styled.div`
+  position: absolute;
+  margin-top: 30px;
+  right: 40px;
+  width: 200px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #191d20;
+  background-color: #1f2428;
+  transition: 0.3s;
+
+  :hover {
+    background-color: #1f242870;
+  }
 `;
 
 const Pink = styled.span`
@@ -810,38 +846,4 @@ const Purple = styled.span`
 
 const Red = styled.span`
   color: red;
-`;
-
-const Content = styled.div`
-  div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-`;
-
-const BorderLeft = styled.div`
-  border-left: 1px solid #7774746f;
-
-  > section {
-    padding-left: 15px;
-  }
-`;
-
-const CodeButton = styled.div`
-  width: 200px;
-  padding: 10px 20px;
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 1px solid #191d20;
-  background-color: #1f2428;
-  transition: 0.3s;
-
-  :hover {
-    background-color: #1f242870;
-  }
 `;
