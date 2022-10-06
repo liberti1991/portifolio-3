@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { GiReturnArrow, GiTurret } from "react-icons/gi";
+import { GiReturnArrow } from "react-icons/gi";
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 
 import { useState } from "react";
@@ -13,11 +13,9 @@ export const HomeCode = ({ handlePage }) => {
   for (let i = 1; i <= 99; i++) {
     numeros.push(i);
   }
-  console.log(numeros);
 
   const [exportToggle, exportToggleSet] = useState(true);
   const handleExport = () => exportToggleSet((previousState) => !previousState);
-
 
   const [returnToggle, returnToggleSet] = useState(true);
   const handleReturn = () => returnToggleSet((previousState) => !previousState);
@@ -31,12 +29,47 @@ export const HomeCode = ({ handlePage }) => {
   const [const3, const3Set] = useState(true);
   const handleConst3 = () => const3Set((previousState) => !previousState);
 
+  //!exportToggle && returnToggle && const1 && const2 && const3
+  const export1 = numeros.slice(0, 12);
+  const export2 = numeros.slice(42);
+  const numerosExport = export1.concat(export2);
+
+  //exportToggle && !returnToggle && const1 && const2 && const3
+  const return1 = numeros.slice(0, 16);
+  const return2 = numeros.slice(41);
+  const numerosReturn = return1.concat(return2);
+
+  //exportToggle && returnToggle && !const1 && const2 && const3
+  const const1n1 = numeros.slice(0, 45);
+  const const1n2 = numeros.slice(49);
+  const numerosConst1 = const1n1.concat(const1n2);
+
+  //exportToggle && !returnToggle && !const1 && const2 && const3
+  const spaceReturnAndConst1 = numeros.slice(41, 45);
+  const numberReturnAndConst1 = return1.concat(spaceReturnAndConst1).concat(const1n2);
+
+  //!exportToggle && returnToggle && !const1 && const2 && const3
+  const spaceExportAndConst1 = numeros.slice(42, 45);
+  const numberExportAndConst1 = export1.concat(spaceExportAndConst1).concat(const1n2);
+
+  //!exportToggle && !returnToggle && !const1 && const2 && const3
+  const numberExportOTReturnOrConst1 = export1.concat(spaceExportAndConst1).concat(const1n2);
+
+  console.log(numberExportOTReturnOrConst1);
   return (
     <Container>
       <Number>
-        {numeros.map((item) => (
+        {/* {numeros.map((item) => (
           <span key={item}>{item}</span>
-        ))}
+        ))} */}
+        {exportToggle && returnToggle && const1 && const2 && const3 ? numeros.map((item) => <span key={item}>{item}</span>) : null}
+        {!exportToggle && returnToggle && const1 && const2 && const3 ? numerosExport.map((item) => <span key={item}>{item}</span>) : null}
+        {exportToggle && !returnToggle && const1 && const2 && const3 ? numerosReturn.map((item) => <span key={item}>{item}</span>) : null}
+        {!exportToggle && !returnToggle && const1 && const2 && const3 ? numerosExport.map((item) => <span key={item}>{item}</span>) : null}
+        {exportToggle && returnToggle && !const1 && const2 && const3 ? numerosConst1.map((item) => <span key={item}>{item}</span>) : null}
+        {exportToggle && !returnToggle && !const1 && const2 && const3 ? numberReturnAndConst1.map((item) => <span key={item}>{item}</span>) : null}
+        {!exportToggle && returnToggle && !const1 && const2 && const3 ? numberExportAndConst1.map((item) => <span key={item}>{item}</span>) : null}
+        {!exportToggle && !returnToggle && !const1 && const2 && const3 ? numberExportOTReturnOrConst1.map((item) => <span key={item}>{item}</span>) : null}
       </Number>
       <Content>
         {/* import */}
