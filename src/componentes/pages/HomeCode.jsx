@@ -55,7 +55,18 @@ export const HomeCode = ({ handlePage }) => {
   //!exportToggle && !returnToggle && !const1 && const2 && const3
   const numberExportOTReturnOrConst1 = export1.concat(spaceExportAndConst1).concat(const1n2);
 
-  console.log(numberExportOTReturnOrConst1);
+  //exportToggle && returnToggle && const1 && !const2 && const3
+  const const2n1 = numeros.slice(0, 52);
+  const const2n2 = numeros.slice(68);
+  const numerosConst2 = const2n1.concat(const2n2);
+
+  //exportToggle && returnToggle && !const1 && !const2 && const3
+  const spaceConst1AnConst2 =numeros.slice(49,52);
+  const numerosConst1AndConst2 = const1n1.concat(spaceConst1AnConst2).concat(const2n2);
+
+
+
+  console.log(numerosConst1AndConst2);
   return (
     <Container>
       <Number>
@@ -70,6 +81,8 @@ export const HomeCode = ({ handlePage }) => {
         {exportToggle && !returnToggle && !const1 && const2 && const3 ? numberReturnAndConst1.map((item) => <span key={item}>{item}</span>) : null}
         {!exportToggle && returnToggle && !const1 && const2 && const3 ? numberExportAndConst1.map((item) => <span key={item}>{item}</span>) : null}
         {!exportToggle && !returnToggle && !const1 && const2 && const3 ? numberExportOTReturnOrConst1.map((item) => <span key={item}>{item}</span>) : null}
+        {exportToggle && returnToggle && const1 && !const2 && const3 ? numerosConst2.map((item) => <span key={item}>{item}</span>) : null}
+        {exportToggle && returnToggle && !const1 && !const2 && const3 ? numerosConst1AndConst2.map((item) => <span key={item}>{item}</span>) : null}
       </Number>
       <Content>
         {/* import */}
