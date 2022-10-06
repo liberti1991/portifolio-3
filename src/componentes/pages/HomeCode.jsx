@@ -61,28 +61,53 @@ export const HomeCode = ({ handlePage }) => {
   const numerosConst2 = const2n1.concat(const2n2);
 
   //exportToggle && returnToggle && !const1 && !const2 && const3
-  const spaceConst1AnConst2 =numeros.slice(49,52);
+  const spaceConst1AnConst2 = numeros.slice(49, 52);
   const numerosConst1AndConst2 = const1n1.concat(spaceConst1AnConst2).concat(const2n2);
 
+  //exportToggle && !returnToggle && !const1 && !const2 && const3
+  const numberReturnOrConst1OrConst2 = return1.concat(spaceReturnAndConst1).concat(spaceConst1AnConst2).concat(const2n2);
 
+  //!exportToggle && !returnToggle && !const1 && !const2 && const3
+  const numberExportOrReturnOrConst1OrConst2 = export1.concat(spaceExportAndConst1).concat(spaceConst1AnConst2).concat(const2n2);
 
-  console.log(numerosConst1AndConst2);
+  //exportToggle && returnToggle && const1 && const2 && !const3
+  const const3n1 = numeros.slice(0, 71);
+  const const3n2 = numeros.slice(97);
+  const numerosConst3 = const3n1.concat(const3n2);
+
+  //exportToggle && returnToggle && const1 && !const2 && !const3
+  const spaceConst2AnConst3 = numeros.slice(68, 71);
+  const numerosConst2AndConst3 = const2n1.concat(spaceConst2AnConst3).concat(const3n2);
+
+  //exportToggle && returnToggle && !const1 && !const2 && !const3
+  const numberConst1OrConst2OrConst3 = const1n1.concat(spaceConst1AnConst2).concat(spaceConst2AnConst3).concat(const3n2);
+
+  //exportToggle && !returnToggle && !const1 && !const2 && !const3 && numberReturnORConst1OrConst2OrConst3
+  const numberReturnORConst1OrConst2OrConst3 = return1.concat(spaceExportAndConst1).concat(spaceConst1AnConst2).concat(spaceConst2AnConst3).concat(const3n2);
+
+  console.log(numberReturnORConst1OrConst2OrConst3);
   return (
     <Container>
       <Number>
         {/* {numeros.map((item) => (
           <span key={item}>{item}</span>
         ))} */}
-        {exportToggle && returnToggle && const1 && const2 && const3 ? numeros.map((item) => <span key={item}>{item}</span>) : null}
-        {!exportToggle && returnToggle && const1 && const2 && const3 ? numerosExport.map((item) => <span key={item}>{item}</span>) : null}
-        {exportToggle && !returnToggle && const1 && const2 && const3 ? numerosReturn.map((item) => <span key={item}>{item}</span>) : null}
-        {!exportToggle && !returnToggle && const1 && const2 && const3 ? numerosExport.map((item) => <span key={item}>{item}</span>) : null}
-        {exportToggle && returnToggle && !const1 && const2 && const3 ? numerosConst1.map((item) => <span key={item}>{item}</span>) : null}
-        {exportToggle && !returnToggle && !const1 && const2 && const3 ? numberReturnAndConst1.map((item) => <span key={item}>{item}</span>) : null}
-        {!exportToggle && returnToggle && !const1 && const2 && const3 ? numberExportAndConst1.map((item) => <span key={item}>{item}</span>) : null}
-        {!exportToggle && !returnToggle && !const1 && const2 && const3 ? numberExportOTReturnOrConst1.map((item) => <span key={item}>{item}</span>) : null}
-        {exportToggle && returnToggle && const1 && !const2 && const3 ? numerosConst2.map((item) => <span key={item}>{item}</span>) : null}
-        {exportToggle && returnToggle && !const1 && !const2 && const3 ? numerosConst1AndConst2.map((item) => <span key={item}>{item}</span>) : null}
+        {exportToggle && returnToggle && const1 && const2 && const3 && numeros.map((item) => <span key={item}>{item}</span>)}
+        {!exportToggle && returnToggle && const1 && const2 && const3 && numerosExport.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && !returnToggle && const1 && const2 && const3 && numerosReturn.map((item) => <span key={item}>{item}</span>)}
+        {!exportToggle && !returnToggle && const1 && const2 && const3 && numerosExport.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && returnToggle && !const1 && const2 && const3 && numerosConst1.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && !returnToggle && !const1 && const2 && const3 && numberReturnAndConst1.map((item) => <span key={item}>{item}</span>)}
+        {!exportToggle && returnToggle && !const1 && const2 && const3 && numberExportAndConst1.map((item) => <span key={item}>{item}</span>)}
+        {!exportToggle && !returnToggle && !const1 && const2 && const3 && numberExportOTReturnOrConst1.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && returnToggle && const1 && !const2 && const3 && numerosConst2.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && returnToggle && !const1 && !const2 && const3 && numerosConst1AndConst2.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && !returnToggle && !const1 && !const2 && const3 && numberReturnOrConst1OrConst2.map((item) => <span key={item}>{item}</span>)}
+        {!exportToggle && !returnToggle && !const1 && !const2 && const3 && numberExportOrReturnOrConst1OrConst2.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && returnToggle && const1 && const2 && !const3 && numerosConst3.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && returnToggle && const1 && !const2 && !const3 && numerosConst2AndConst3.map((item) => <span key={item}>{item}</span>)}
+        {exportToggle && returnToggle && !const1 && !const2 && !const3 && numberConst1OrConst2OrConst3.map((item) => <span key={item}>{item}</span>)}
+        {/* {exportToggle && !returnToggle && !const1 && !const2 && !const3 && numberReturnORConst1OrConst2OrConst3.map((item) => <span key={item}>{item}</span>)} */}
       </Number>
       <Content>
         {/* import */}
