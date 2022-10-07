@@ -19,5 +19,9 @@ export const Body = () => {
 const AsideContainer = styled.div`
   display: grid;
   grid-template-columns: 220px auto;
+
+  @media screen and (max-width: 648px) {
+    
+  }
 `;
 

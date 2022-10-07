@@ -81,7 +81,7 @@ const CodeButton = styled.div`
   background-color: #1f2428;
   transition: 0.3s;
 
-  svg {
+  > svg {
     font-size: 18px;
   }
 

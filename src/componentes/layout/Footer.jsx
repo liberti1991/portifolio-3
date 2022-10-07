@@ -64,6 +64,7 @@ const Container = styled.footer`
   font-size: 14px;
   background: #1f2428;
   border-top: 1px solid #191d20;
+  overflow-x: auto;
 
   div {
     display: flex;
@@ -88,5 +89,8 @@ const Container = styled.footer`
         background-color: #30363d;
       }
     }
+  }
+  @media screen and (max-width: 648px) {
+    white-space: nowrap;
   }
 `;

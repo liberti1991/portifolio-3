@@ -44,11 +44,13 @@ const Container = styled.section`
   background-color: #1f2428;
   border-bottom: 1px solid #191d20;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
   font-weight: 500;
   font-size: 12px;
+  overflow-x: auto;
 
   > ul {
     display: flex;
@@ -72,5 +74,30 @@ const Container = styled.section`
   > p {
     margin-left: -350px;
   }
-`;
 
+  @media screen and (max-width: 648px) {
+    gap: 10px;
+
+    ul {
+      :nth-child(1) {
+        li {
+          :nth-child(2),
+          :nth-child(3),
+          :nth-child(4),
+          :nth-child(5),
+          :nth-child(6),
+          :nth-child(7),
+          :nth-child(8),
+          :nth-child(9) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    > p {
+      margin-left: 0;
+      white-space: nowrap;
+    }
+  }
+`;

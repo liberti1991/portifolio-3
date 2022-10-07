@@ -41,4 +41,10 @@ export default createGlobalStyle`
     background-color: #fff;
     border-radius: 50px;
   }
+
+  @media screen and (max-width: 648px) {
+    ::-webkit-scrollbar {
+      height: 1px;
+    }
+  }
 `;
