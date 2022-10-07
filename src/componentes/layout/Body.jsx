@@ -24,5 +24,9 @@ const AsideContainer = styled.div`
     grid-template-columns: 32px auto
 
   }
+
+  /* section {
+    overflow-x: auto;
+  } */
 `;
 

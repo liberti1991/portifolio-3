@@ -24,6 +24,7 @@ const List = styled.ul`
   background: #1f2428;
   display: flex;
   align-items: center;
+  overflow-x: auto;
 
   > li {
     .active {
