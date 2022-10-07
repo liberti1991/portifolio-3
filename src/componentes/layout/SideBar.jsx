@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 import { BsChevronRight, BsChevronDown } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 
 import { useState } from "react";
 import { dbMenu } from "../db/dbMenu";
@@ -9,6 +11,9 @@ import { NavLink } from "react-router-dom";
 export const SideBar = () => {
   const [menu, setMenu] = useState(true);
   const handleMenu = () => setMenu((previousState) => !previousState);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => setIsOpen((previousState) => !previousState);
 
   //excluindo o icone da engrenagem
   const listOne = dbMenu.slice(0, 5);
@@ -22,6 +27,7 @@ export const SideBar = () => {
     <Container>
       <SectionOne>
         <ul>
+          <div onClick={handleClick}>{isOpen ? <MdClose /> : <GiHamburgerMenu />}</div>
           {listOne.map((item) => (
             <li key={item.id}>
               <NavLink activeclassname="active" to={item.to}>
@@ -66,9 +72,14 @@ export const SideBar = () => {
 };
 
 const Container = styled.aside`
+  position: relative;
   display: flex;
   width: 220px;
   height: calc(100vh - 55px);
+
+  @media screen and (max-width: 648px) {
+
+  }
 `;
 
 const SectionOne = styled.section`
@@ -84,6 +95,12 @@ const SectionOne = styled.section`
     align-items: center;
     flex-direction: column;
     display: flex;
+    font-size: 35px;
+    color: #a1a1a6;
+
+    > div {
+      display: none;
+    }
 
     > li {
       .active {
@@ -99,7 +116,6 @@ const SectionOne = styled.section`
         display: flex;
 
         > svg {
-          font-size: 35px;
           color: #a1a1a6;
         }
 
@@ -109,6 +125,20 @@ const SectionOne = styled.section`
             color: #fff;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 648px) {
+    width: 15%;
+    border-right: 1px solid #191d20;
+
+    > ul {
+      font-size: 20px;
+
+      > div {
+        margin-top: 10px;
+        display: inline-block;
       }
     }
   }
@@ -126,13 +156,13 @@ const SectionTwo = styled.section`
     align-items: center;
     padding: 0 15px;
     margin-top: 10px;
-    
+
     > span {
       font-size: 20px;
       margin-top: -12px;
     }
   }
-  
+
   > ul {
     margin: 10px 0;
 
@@ -152,6 +182,9 @@ const SectionTwo = styled.section`
       }
     }
   }
+  @media screen and (max-width: 648px) {
+    display: none;
+  }
 `;
 
 const SwitchMenu = styled.article`
@@ -162,4 +195,21 @@ const SwitchMenu = styled.article`
   gap: 10px;
   font-size: 14px;
   font-weight: 500;
+`;
+
+const Shadow = styled.div`
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  top: 80px;
+  position: absolute;
+  background-color: white;
+  opacity: 0.2;
+  transition: all 0.5s ease;
+  z-index: 10;
+  left: ${(p) => (p.isOpen ? 0 : "-100%")};
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
