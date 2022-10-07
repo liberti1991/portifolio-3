@@ -8,12 +8,6 @@ import { useState } from "react";
 export const HomeCode = ({ handlePage }) => {
   const icons = ["{", "}", "=>", "(", ")", "[", "]", "<>", "</>", "<", ">", "</", "/>"];
 
-  const numeros = [];
-
-  for (let i = 1; i <= 99; i++) {
-    numeros.push(i);
-  }
-
   const [exportToggle, exportToggleSet] = useState(true);
   const handleExport = () => exportToggleSet((previousState) => !previousState);
 
@@ -29,844 +23,918 @@ export const HomeCode = ({ handlePage }) => {
   const [const3, const3Set] = useState(true);
   const handleConst3 = () => const3Set((previousState) => !previousState);
 
-  //!exportToggle && returnToggle && const1 && const2 && const3
-  const export1 = numeros.slice(0, 12);
-  const export2 = numeros.slice(42);
-  const numerosExport = export1.concat(export2);
-
-  //exportToggle && !returnToggle && const1 && const2 && const3
-  const return1 = numeros.slice(0, 16);
-  const return2 = numeros.slice(41);
-  const numerosReturn = return1.concat(return2);
-
-  //exportToggle && returnToggle && !const1 && const2 && const3
-  const const1n1 = numeros.slice(0, 45);
-  const const1n2 = numeros.slice(49);
-  const numerosConst1 = const1n1.concat(const1n2);
-
-  //exportToggle && !returnToggle && !const1 && const2 && const3
-  const spaceReturnAndConst1 = numeros.slice(41, 45);
-  const numberReturnAndConst1 = return1.concat(spaceReturnAndConst1).concat(const1n2);
-
-  //!exportToggle && returnToggle && !const1 && const2 && const3
-  const spaceExportAndConst1 = numeros.slice(42, 45);
-  const numberExportAndConst1 = export1.concat(spaceExportAndConst1).concat(const1n2);
-
-  //!exportToggle && !returnToggle && !const1 && const2 && const3
-  const numberExportOTReturnOrConst1 = export1.concat(spaceExportAndConst1).concat(const1n2);
-
-  //exportToggle && returnToggle && const1 && !const2 && const3
-  const const2n1 = numeros.slice(0, 52);
-  const const2n2 = numeros.slice(68);
-  const numerosConst2 = const2n1.concat(const2n2);
-
-  //exportToggle && returnToggle && !const1 && !const2 && const3
-  const spaceConst1AnConst2 = numeros.slice(49, 52);
-  const numerosConst1AndConst2 = const1n1.concat(spaceConst1AnConst2).concat(const2n2);
-
-  //exportToggle && !returnToggle && !const1 && !const2 && const3
-  const numberReturnOrConst1OrConst2 = return1.concat(spaceReturnAndConst1).concat(spaceConst1AnConst2).concat(const2n2);
-
-  //!exportToggle && !returnToggle && !const1 && !const2 && const3
-  const numberExportOrReturnOrConst1OrConst2 = export1.concat(spaceExportAndConst1).concat(spaceConst1AnConst2).concat(const2n2);
-
-  //exportToggle && returnToggle && const1 && const2 && !const3
-  const const3n1 = numeros.slice(0, 71);
-  const const3n2 = numeros.slice(97);
-  const numerosConst3 = const3n1.concat(const3n2);
-
-  //exportToggle && returnToggle && const1 && !const2 && !const3
-  const spaceConst2AnConst3 = numeros.slice(68, 71);
-  const numerosConst2AndConst3 = const2n1.concat(spaceConst2AnConst3).concat(const3n2);
-
-  //exportToggle && returnToggle && !const1 && !const2 && !const3
-  const numberConst1OrConst2OrConst3 = const1n1.concat(spaceConst1AnConst2).concat(spaceConst2AnConst3).concat(const3n2);
-
-  //exportToggle && !returnToggle && !const1 && !const2 && !const3 && numberReturnORConst1OrConst2OrConst3
-  const numberReturnORConst1OrConst2OrConst3 = return1.concat(spaceExportAndConst1).concat(spaceConst1AnConst2).concat(spaceConst2AnConst3).concat(const3n2);
-
-  console.log(numberReturnORConst1OrConst2OrConst3);
   return (
     <Container>
-      <Number>
-        {/* {numeros.map((item) => (
-          <span key={item}>{item}</span>
-        ))} */}
-        {exportToggle && returnToggle && const1 && const2 && const3 && numeros.map((item) => <span key={item}>{item}</span>)}
-        {!exportToggle && returnToggle && const1 && const2 && const3 && numerosExport.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && !returnToggle && const1 && const2 && const3 && numerosReturn.map((item) => <span key={item}>{item}</span>)}
-        {!exportToggle && !returnToggle && const1 && const2 && const3 && numerosExport.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && returnToggle && !const1 && const2 && const3 && numerosConst1.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && !returnToggle && !const1 && const2 && const3 && numberReturnAndConst1.map((item) => <span key={item}>{item}</span>)}
-        {!exportToggle && returnToggle && !const1 && const2 && const3 && numberExportAndConst1.map((item) => <span key={item}>{item}</span>)}
-        {!exportToggle && !returnToggle && !const1 && const2 && const3 && numberExportOTReturnOrConst1.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && returnToggle && const1 && !const2 && const3 && numerosConst2.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && returnToggle && !const1 && !const2 && const3 && numerosConst1AndConst2.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && !returnToggle && !const1 && !const2 && const3 && numberReturnOrConst1OrConst2.map((item) => <span key={item}>{item}</span>)}
-        {!exportToggle && !returnToggle && !const1 && !const2 && const3 && numberExportOrReturnOrConst1OrConst2.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && returnToggle && const1 && const2 && !const3 && numerosConst3.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && returnToggle && const1 && !const2 && !const3 && numerosConst2AndConst3.map((item) => <span key={item}>{item}</span>)}
-        {exportToggle && returnToggle && !const1 && !const2 && !const3 && numberConst1OrConst2OrConst3.map((item) => <span key={item}>{item}</span>)}
-        {/* {exportToggle && !returnToggle && !const1 && !const2 && !const3 && numberReturnORConst1OrConst2OrConst3.map((item) => <span key={item}>{item}</span>)} */}
-      </Number>
-      <Content>
-        {/* import */}
-        <div>
-          <Pink>import</Pink>
-          <White>styled</White>
-          <Pink>from</Pink>
-          <Yellow>
-            "styled-components" <White>;</White>
-          </Yellow>
-        </div>
-        {/* import */}
-        <div>
-          <Pink>import</Pink>
-          <Yellow>{icons[0]}</Yellow>
-          <White>useState</White>
-          <Yellow>{icons[1]}</Yellow>
-          <Pink>from</Pink>
-          <Yellow>
-            "react" <White>;</White>
-          </Yellow>
-        </div>
-        {/* import */}
-        <div>
-          <Pink>import</Pink>
-          <Yellow>{icons[0]}</Yellow>
-          <White>NavLink</White>
-          <Yellow>{icons[1]}</Yellow>
-          <Pink>from</Pink>
-          <Yellow>
-            "react-router-dom" <White>;</White>
-          </Yellow>
-        </div>
-        {/* import */}
+      <section>
+        <Number>1</Number>
+        <Content>
+          <div>
+            <Pink>import</Pink>
+            <White>styled</White>
+            <Pink>from</Pink>
+            <Yellow>
+              "styled-components" <White>;</White>
+            </Yellow>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>2</Number>
+        <Content>
+          <div>
+            <Pink>import</Pink>
+            <Yellow>{icons[0]}</Yellow>
+            <White>useState</White>
+            <Yellow>{icons[1]}</Yellow>
+            <Pink>from</Pink>
+            <Yellow>
+              "react" <White>;</White>
+            </Yellow>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>3</Number>
+        <Content>
+          <div>
+            <Pink>import</Pink>
+            <Yellow>{icons[0]}</Yellow>
+            <White>NavLink</White>
+            <Yellow>{icons[1]}</Yellow>
+            <Pink>from</Pink>
+            <Yellow>
+              "react-router-dom" <White>;</White>
+            </Yellow>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>4</Number>
         <br />
-        <div>
-          <Pink>import</Pink>
-          <Yellow>{icons[0]}</Yellow>
-          <White>BsFileEarmarkCode</White>
-          <Yellow>{icons[1]}</Yellow>
-          <Pink>from</Pink>
-          <Yellow>
-            "react-icons/bs" <White>;</White>
-          </Yellow>
-        </div>
-        {/* import */}
-        <div>
-          <Pink>import</Pink>
-          <Yellow>{icons[0]}</Yellow>
-          <White>MdDoubleArrow</White>
-          <Yellow>{icons[1]}</Yellow>
-          <Pink>from</Pink>
-          <Yellow>
-            "react-icons/md" <White>;</White>
-          </Yellow>
-        </div>
+      </section>
+      <section>
+        <Number>5</Number>
+        <Content>
+          <div>
+            <Pink>import</Pink>
+            <Yellow>{icons[0]}</Yellow>
+            <White>BsFileEarmarkCode</White>
+            <Yellow>{icons[1]}</Yellow>
+            <Pink>from</Pink>
+            <Yellow>
+              "react-icons/bs" <White>;</White>
+            </Yellow>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>6</Number>
+        <Content>
+          <div>
+            <Pink>import</Pink>
+            <Yellow>{icons[0]}</Yellow>
+            <White>MdDoubleArrow</White>
+            <Yellow>{icons[1]}</Yellow>
+            <Pink>from</Pink>
+            <Yellow>
+              "react-icons/md" <White>;</White>
+            </Yellow>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>7</Number>
         <br />
-        {/* import */}
-        <div>
-          <Pink>import</Pink>
-          <White>programmer</White>
-          <Pink>from</Pink>
-          <Yellow>
-            "../../assets/Programmer.gif" <White>;</White>
-          </Yellow>
-        </div>
+      </section>
+      <section>
+        <Number>8</Number>
+        <Content>
+          <div>
+            <Pink>import</Pink>
+            <White>programmer</White>
+            <Pink>from</Pink>
+            <Yellow>
+              "../../assets/Programmer.gif" <White>;</White>
+            </Yellow>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>9</Number>
         <br />
-        {/* import */}
-        <div>
-          <Pink>import</Pink>
-          <Yellow>{icons[0]}</Yellow>
-          <White>HomeCode</White>
-          <Yellow>{icons[1]}</Yellow>
-          <Pink>from</Pink>
-          <Yellow>"./HomeCode"</Yellow>
-          <White>;</White>
-        </div>
+      </section>
+      <section>
+        <Number>10</Number>
+        <Content>
+          <div>
+            <Pink>import</Pink>
+            <Yellow>{icons[0]}</Yellow>
+            <White>HomeCode</White>
+            <Yellow>{icons[1]}</Yellow>
+            <Pink>from</Pink>
+            <Yellow>"./HomeCode"</Yellow>
+            <White>;</White>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>11</Number>
         <br />
-        {/* export */}
-        <div>
-          {!exportToggle && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleExport} />}
-          {exportToggle && <MdKeyboardArrowDown onClick={handleExport} />}
-          <Pink>export</Pink>
-          <Pink>const</Pink>
-          <Green>Home</Green>
-          <Pink> = </Pink>
-          <Orange>{icons[3]}</Orange>
-          <Orange>{icons[4]}</Orange>
-          <Pink>{icons[2]}</Pink>
-          <Yellow>{icons[0]}</Yellow>
-        </div>
-        {exportToggle && (
-          <>
-            <BorderLeft>
-              <section>
-                <div>
-                  <Pink>const</Pink>
-                  <Blue>{icons[5]}</Blue>
-                  <Purple>
-                    page<White>,</White>
-                  </Purple>
-                  <Green>pageSet</Green>
-                  <Blue>{icons[6]}</Blue>
-                  <Pink> = </Pink>
-                  <Green>
-                    useState<Yellow>{icons[3]}</Yellow>
-                  </Green>
-                  <Purple>true</Purple>
-                  <Yellow>{icons[4]}</Yellow>
-                  <White>;</White>
-                </div>
-                <div>
-                  <Pink>const</Pink>
-                  <Green>handlePage</Green>
-                  <Pink> = </Pink>
-                  <Orange>{icons[3]}</Orange>
-                  <Orange>{icons[4]}</Orange>
-                  <Pink>{icons[2]}</Pink>
-                  <Green>
-                    pageSet
+      </section>
+      {/* 1 */}
+      <section>
+        <Number>12</Number>
+        <Content>
+          <div>
+            {!exportToggle && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleExport} />}
+            {exportToggle && <MdKeyboardArrowDown onClick={handleExport} />}
+            <Pink>export</Pink>
+            <Pink>const</Pink>
+            <Green>Home</Green>
+            <Pink> = </Pink>
+            <Orange>{icons[3]}</Orange>
+            <Orange>{icons[4]}</Orange>
+            <Pink>{icons[2]}</Pink>
+            <Yellow>{icons[0]}</Yellow>
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>13</Number>
+        <Content>
+          <BorderLeft>
+            <div>
+              <Pink>const</Pink>
+              <Blue>{icons[5]}</Blue>
+              <Purple>
+                page<White>,</White>
+              </Purple>
+              <Green>pageSet</Green>
+              <Blue>{icons[6]}</Blue>
+              <Pink> = </Pink>
+              <Green>
+                useState<Yellow>{icons[3]}</Yellow>
+              </Green>
+              <Purple>true</Purple>
+              <Yellow>{icons[4]}</Yellow>
+              <White>;</White>
+            </div>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>14</Number>
+        <Content>
+          <BorderLeft>
+            <div>
+              <Pink>const</Pink>
+              <Green>handlePage</Green>
+              <Pink> = </Pink>
+              <Orange>{icons[3]}</Orange>
+              <Orange>{icons[4]}</Orange>
+              <Pink>{icons[2]}</Pink>
+              <Green>
+                pageSet
+                <Orange>
+                  {icons[3]}
+                  <Red>
+                    {icons[3]}
                     <Orange>
-                      {icons[3]}
-                      <Red>
-                        {icons[3]}
-                        <Orange>
-                          <i>previousState</i>
-                        </Orange>
-                        <Red>{icons[4]}</Red>
-                      </Red>
+                      <i>previousState</i>
                     </Orange>
-                  </Green>
-
-                  <Pink>{icons[2]}</Pink>
-                  <Pink>!</Pink>
-                  <Orange>
-                    <i>previousState</i>
-                    <Orange>{icons[4]}</Orange>
-                  </Orange>
-                  <White>;</White>
-                </div>
-                <br />
-
+                    <Red>{icons[4]}</Red>
+                  </Red>
+                </Orange>
+              </Green>
+              <Pink>{icons[2]}</Pink>
+              <Pink>!</Pink>
+              <Orange>
+                <i>previousState</i>
+                <Orange>{icons[4]}</Orange>
+              </Orange>
+              <White>;</White>
+            </div>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>15</Number>
+        <BorderLeft>
+          <br />
+        </BorderLeft>
+      </section>
+      {/* 2 */}
+      <section>
+        <Number>16</Number>
+        <Content>
+          <BorderLeft>
+            <div>
+              {!returnToggle && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleReturn} />}
+              {returnToggle && <MdKeyboardArrowDown onClick={handleReturn} />}
+              <Pink>return</Pink>
+              <Orange>{icons[3]}</Orange>
+            </div>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>17</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <div>
+                <White>{icons[7]}</White>
+              </div>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>18</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
                 <div>
-                  {!returnToggle && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleReturn} />}
-                  {returnToggle && <MdKeyboardArrowDown onClick={handleReturn} />}
-                  <Pink>return</Pink>
-                  <Orange>{icons[3]}</Orange>
-                  <br />
+                  <Orange>{icons[0]}</Orange>
+                  <p>page</p>
+                  <Pink>?</Pink>
+                  <Red>{icons[3]}</Red>
                 </div>
-                {returnToggle && (
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>19</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <div>
+                    <White>
+                      {icons[9]}
+                      <Blue>
+                        <i>Container</i>
+                      </Blue>
+                      <White>{icons[10]}</White>
+                    </White>
+                  </div>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>20</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
                   <BorderLeft>
-                    <section>
+                    <div>
+                      <White>
+                        {icons[9]}
+                        <Blue>
+                          <i>Content</i>
+                        </Blue>
+                        <White>{icons[10]}</White>
+                      </White>
+                    </div>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>21</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
                       <div>
-                        <White>{icons[7]}</White>
+                        <White>
+                          {icons[9]}
+                          <Pink>h1</Pink>
+                          <White>{icons[10]}</White>
+                        </White>
+                        <White>Rodrigo Liberti</White>
+                        <White>
+                          {icons[11]}
+                          <Pink>
+                            h1<White>{icons[10]}</White>
+                          </Pink>
+                        </White>
                       </div>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>22</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <div>
+                        <White>
+                          {icons[9]}
+                          <Pink>p</Pink>
+                          <White>{icons[10]}</White>
+                        </White>
+                        <White>Desenvolvedor Front-End</White>
+                        <White>
+                          {icons[11]}
+                          <Pink>p</Pink>
+                          <White>{icons[10]}</White>
+                        </White>
+                      </div>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>23</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
                       <BorderLeft>
-                        <section>
+                        <div>
+                          <White>
+                            {icons[9]}
+                            <Pink>div</Pink>
+                            <White>{icons[10]}</White>
+                          </White>
+                        </div>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>24</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
                           <div>
-                            <Orange>{icons[0]}</Orange>
-                            <p>page</p>
-                            <Pink>?</Pink>
-                            <Red>{icons[3]}</Red>
+                            <White>
+                              {icons[9]}
+                              <Blue>
+                                <i>CodeButton</i>
+                              </Blue>
+                            </White>
+                            <Green>onClick</Green>
+                            <Pink> =</Pink>
+                            <Brown>
+                              {icons[0]}
+                              <Green>handlePage</Green>
+                              <Brown>{icons[1]}</Brown>
+                              <White>{icons[10]}</White>
+                            </Brown>
                           </div>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>25</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
                           <BorderLeft>
-                            <section>
+                            <div>
+                              <White>
+                                {icons[9]}
+                                <Blue>
+                                  <i>BsFileEarmarkCode</i>
+                                </Blue>
+                              </White>
+                              <White>{icons[12]}</White>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>26</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <White>Ver código fonte...</White>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>27</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <div>
+                            <White>{icons[11]}</White>
+                            <Blue>
+                              <i>CodeButton</i>
+                              <White>{icons[10]}</White>
+                            </Blue>
+                          </div>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>28</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <div>
+                            <White>
+                              {icons[9]}
+                              <Blue>
+                                <i>CodeButton</i>
+                              </Blue>
+                            </White>
+                          </div>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>29</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
+                              <White>
+                                {icons[9]}
+                                <Blue>NavLink</Blue>
+                              </White>
+                              <Green>
+                                to<Pink>=</Pink>
+                                <Yellow>"/projetos"</Yellow>
+                                <White>{icons[10]}</White>
+                              </Green>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>30</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <BorderLeft>
                               <div>
                                 <White>
                                   {icons[9]}
                                   <Blue>
-                                    <i>Container</i>
+                                    <i>MdDoubleArrow</i>
                                   </Blue>
-                                  <White>{icons[10]}</White>
                                 </White>
-                              </div>
-                              <BorderLeft>
-                                <section>
-                                  <div>
-                                    <White>
-                                      {icons[9]}
-                                      <Blue>
-                                        <i>Content</i>
-                                      </Blue>
-                                      <White>{icons[10]}</White>
-                                    </White>
-                                  </div>
-                                  <BorderLeft>
-                                    <section>
-                                      <div>
-                                        <White>
-                                          {icons[9]}
-                                          <Pink>h1</Pink>
-                                          <White>{icons[10]}</White>
-                                        </White>
-                                        <White>Rodrigo Liberti</White>
-                                        <White>
-                                          {icons[11]}
-                                          <Pink>
-                                            h1<White>{icons[10]}</White>
-                                          </Pink>
-                                        </White>
-                                      </div>
-                                      <div>
-                                        <White>
-                                          {icons[9]}
-                                          <Pink>p</Pink>
-                                          <White>{icons[10]}</White>
-                                        </White>
-                                        <White>Desenvolvedor Front-End</White>
-                                        <White>
-                                          {icons[11]}
-                                          <Pink>p</Pink>
-                                          <White>{icons[10]}</White>
-                                        </White>
-                                      </div>
-                                      <div>
-                                        <White>
-                                          {icons[9]}
-                                          <Pink>div</Pink>
-                                          <White>{icons[10]}</White>
-                                        </White>
-                                      </div>
-                                      <BorderLeft>
-                                        <section>
-                                          <div>
-                                            <White>
-                                              {icons[9]}
-                                              <Blue>
-                                                <i>CodeButton</i>
-                                              </Blue>
-                                            </White>
-                                            <Green>onClick</Green>
-                                            <Pink> =</Pink>
-                                            <Brown>
-                                              {icons[0]}
-                                              <Green>handlePage</Green>
-                                              <Brown>{icons[1]}</Brown>
-                                              <White>{icons[10]}</White>
-                                            </Brown>
-                                          </div>
-                                          <BorderLeft>
-                                            <section>
-                                              <div>
-                                                <White>
-                                                  {icons[9]}
-                                                  <Blue>
-                                                    <i>BsFileEarmarkCode</i>
-                                                  </Blue>
-                                                </White>
-                                                <White>{icons[12]}</White>
-                                              </div>
-                                              <White>Ver código fonte...</White>
-                                            </section>
-                                          </BorderLeft>
-                                          <div>
-                                            <White>{icons[11]}</White>
-                                            <Blue>
-                                              <i>CodeButton</i>
-                                              <White>{icons[10]}</White>
-                                            </Blue>
-                                          </div>
-                                          <div>
-                                            <White>
-                                              {icons[9]}
-                                              <Blue>
-                                                <i>CodeButton</i>
-                                              </Blue>
-                                            </White>
-                                          </div>
-                                          <BorderLeft>
-                                            <section>
-                                              <div>
-                                                <White>
-                                                  {icons[9]}
-                                                  <Blue>NavLink</Blue>
-                                                </White>
-                                                <Green>
-                                                  to<Pink>=</Pink>
-                                                  <Yellow>"/projetos"</Yellow>
-                                                  <White>{icons[10]}</White>
-                                                </Green>
-                                              </div>
-                                              <BorderLeft>
-                                                <section>
-                                                  <div>
-                                                    <White>
-                                                      {icons[9]}
-                                                      <Blue>
-                                                        <i>MdDoubleArrow</i>
-                                                      </Blue>
-                                                    </White>
-                                                    <White>{icons[12]}</White>
-                                                  </div>
-                                                  <White>Meus Projetos...</White>
-                                                </section>
-                                              </BorderLeft>
-                                              <div>
-                                                <White>{icons[11]}</White>
-                                                <Blue>
-                                                  NavLink<White>{icons[10]}</White>
-                                                </Blue>
-                                              </div>
-                                            </section>
-                                          </BorderLeft>
-
-                                          <div>
-                                            <White>{icons[11]}</White>
-                                            <Blue>
-                                              <i>CodeButton</i>
-                                              <White>{icons[10]}</White>
-                                            </Blue>
-                                          </div>
-                                        </section>
-                                      </BorderLeft>
-                                      <div>
-                                        <White>
-                                          {icons[9]}
-                                          <Pink>div</Pink>
-                                        </White>
-                                        <White>{icons[12]}</White>
-                                      </div>
-                                    </section>
-                                  </BorderLeft>
-                                  <div>
-                                    <White>{icons[11]}</White>
-                                    <Blue>
-                                      <i>Content</i>
-                                      <White>{icons[10]}</White>
-                                    </Blue>
-                                  </div>
-                                  <div>
-                                    <White>
-                                      {icons[9]}
-                                      <Pink>img</Pink>
-                                    </White>
-                                    <Green>
-                                      src<Pink>=</Pink>
-                                      <Brown>{icons[0]}</Brown>
-                                      <Purple>programmer</Purple>
-                                      <Brown>{icons[1]}</Brown>
-                                    </Green>
-                                    <Green>
-                                      alt<Pink>=</Pink>
-                                      <Yellow>"programmer img"</Yellow>
-                                    </Green>
-                                    <White>{icons[12]}</White>
-                                  </div>
-                                </section>
-                              </BorderLeft>
-                              <div>
-                                <White>{icons[11]}</White>
-                                <Blue>
-                                  <i>Container</i>
-                                  <White>{icons[10]}</White>
-                                </Blue>
-                              </div>
-                            </section>
-                          </BorderLeft>
-                        </section>
-                      </BorderLeft>
-                      <BorderLeft>
-                        <section>
-                          <div>
-                            <Red>{icons[4]}</Red>
-                            <White>:</White>
-                            <Red>{icons[3]}</Red>
-                          </div>
-                          <BorderLeft>
-                            <section>
-                              <div>
-                                <White>
-                                  {icons[9]}
-                                  <Blue>HomeCode</Blue>
-                                </White>
-                                <Green>
-                                  <i>handlePage</i>
-                                  <Pink>=</Pink>
-                                  <Brown>{icons[0]}</Brown>
-                                  <Green>handlePage</Green>
-                                  <Brown>{icons[1]}</Brown>
-                                </Green>
                                 <White>{icons[12]}</White>
                               </div>
-                            </section>
+                            </BorderLeft>
                           </BorderLeft>
-                        </section>
+                        </BorderLeft>
                       </BorderLeft>
-                      <BorderLeft>
-                        <section>
-                          <div>
-                            <Red>{icons[4]}</Red>
-                            <Yellow>{icons[1]}</Yellow>
-                          </div>
-                        </section>
-                      </BorderLeft>
-                      <div>
-                        <White>{icons[8]}</White>
-                      </div>
-                    </section>
+                    </BorderLeft>
                   </BorderLeft>
-                )}
-                <div>
-                  <Orange>{icons[4]}</Orange>
-                  <White>;</White>
-                </div>
-              </section>
+                </BorderLeft>
+              </BorderLeft>
             </BorderLeft>
-          </>
-        )}
-        <div>
-          <Yellow>{icons[1]}</Yellow>
-          <White>;</White>
-        </div>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>31</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <BorderLeft>
+                              <White>Meus Projetos...</White>
+                            </BorderLeft>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>32</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
+                              <White>{icons[11]}</White>
+                              <Blue>
+                                NavLink<White>{icons[10]}</White>
+                              </Blue>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>33</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <div>
+                            <White>{icons[11]}</White>
+                            <Blue>
+                              <i>CodeButton</i>
+                              <White>{icons[10]}</White>
+                            </Blue>
+                          </div>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>34</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <div>
+                          <White>
+                            {icons[9]}
+                            <Pink>div</Pink>
+                          </White>
+                          <White>{icons[12]}</White>
+                        </div>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>35</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <div>
+                        <White>{icons[11]}</White>
+                        <Blue>
+                          <i>Content</i>
+                          <White>{icons[10]}</White>
+                        </Blue>
+                      </div>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>36</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <div>
+                        <White>
+                          {icons[9]}
+                          <Pink>img</Pink>
+                        </White>
+                        <Green>
+                          src<Pink>=</Pink>
+                          <Brown>{icons[0]}</Brown>
+                          <Purple>programmer</Purple>
+                          <Brown>{icons[1]}</Brown>
+                        </Green>
+                        <Green>
+                          alt<Pink>=</Pink>
+                          <Yellow>"programmer img"</Yellow>
+                        </Green>
+                        <White>{icons[12]}</White>
+                      </div>
+                    </BorderLeft>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>37</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <div>
+                      <White>{icons[11]}</White>
+                      <Blue>
+                        <i>Container</i>
+                        <White>{icons[10]}</White>
+                      </Blue>
+                    </div>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>38</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <div>
+                    <Red>{icons[4]}</Red>
+                    <White>:</White>
+                    <Red>{icons[3]}</Red>
+                  </div>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>39</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <div>
+                      <White>
+                        {icons[9]}
+                        <Blue>HomeCode</Blue>
+                      </White>
+                      <Green>
+                        <i>handlePage</i>
+                        <Pink>=</Pink>
+                        <Brown>{icons[0]}</Brown>
+                        <Green>handlePage</Green>
+                        <Brown>{icons[1]}</Brown>
+                      </Green>
+                      <White>{icons[12]}</White>
+                    </div>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>40</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <BorderLeft>
+                  <div>
+                    <Red>{icons[4]}</Red>
+                    <Yellow>{icons[1]}</Yellow>
+                  </div>
+                </BorderLeft>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>41</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <BorderLeft>
+                <div>
+                  <White>{icons[8]}</White>
+                </div>
+              </BorderLeft>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      <section>
+        <Number>42</Number>
+        <Content>
+          <BorderLeft>
+            <BorderLeft>
+              <div>
+                <Orange>{icons[4]}</Orange>
+                <White>;</White>
+              </div>
+            </BorderLeft>
+          </BorderLeft>
+        </Content>
+      </section>
+      {/* 1 */}
+      <section>
+        <Number>43</Number>
+        <Content>
+          <BorderLeft>
+            <div>
+              <Yellow>{icons[1]}</Yellow>
+              <White>;</White>
+            </div>
+          </BorderLeft>
+        </Content>
+      </section>
+      {/* 2 */}
+      <section>
+        <Number>44</Number>
+        <Content>
+          <div>
+            <br />
+          </div>
+        </Content>
+      </section>
+      <section>
+        <Number>45</Number>
+        <Content>
+          <br />
+        </Content>
+      </section>
 
-        <br />
-        <div>
-          {!const1 && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst1} />}
-          {const1 && <MdKeyboardArrowDown onClick={handleConst1} />}
-          <Pink>Const</Pink>
-          <Purple>Container</Purple>
-          <Pink>=</Pink>
-          <Purple>
-            Styled<White>.div</White>
-            <Yellow>`</Yellow>
-          </Purple>
-        </div>
-        {const1 && (
-          <BorderLeft>
-            <section>
-              <div>
-                <Pink>display:</Pink>
-                <Purple>
-                  grid<White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>grid-template-columns:</Pink>
-                <Purple>
-                  1<Pink>fr</Pink>
-                </Purple>
-                <Purple>
-                  1<Pink>fr</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>align-items:</Pink>
-                <Purple>
-                  center<White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>height:</Pink>
-                <Blue>
-                  calc<Yellow>{icons[3]}</Yellow>
-                  <Purple>
-                    100<Pink>%</Pink>
-                  </Purple>
-                </Blue>
-                <White> - </White>
-                <Purple>
-                  35<Pink>px</Pink>
-                  <Yellow>{icons[4]}</Yellow>
-                  <White>;</White>
-                </Purple>
-              </div>
-            </section>
-          </BorderLeft>
-        )}
-
-        <div>
-          <Yellow>
-            `<White>;</White>
-          </Yellow>
-        </div>
-        <br />
-        <div>
-          {!const2 && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst2} />}
-          {const2 && <MdKeyboardArrowDown onClick={handleConst2} />}
-          <Pink>Const</Pink>
-          <Purple>Content</Purple>
-          <Pink>=</Pink>
-          <Purple>
-            Styled<White>.span</White>
-            <Yellow>`</Yellow>
-          </Purple>
-        </div>
-        {const2 && (
-          <BorderLeft>
-            <section>
-              <div>
-                <Pink>padding:</Pink>
-                <Purple>
-                  50<Pink>px</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <br />
-              <div>
-                <White>{icons[10]}</White>
-                <Pink>p</Pink>
-                <Yellow>{icons[0]}</Yellow>
-              </div>
-              <BorderLeft>
-                <section>
-                  <div>
-                    <Pink>font-size:</Pink>
-                    <Purple>
-                      16<Pink>px</Pink>
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                </section>
-              </BorderLeft>
-              <Yellow>{icons[1]}</Yellow>
-              <br />
-              <br />
-              <div>
-                <White>{icons[10]}</White>
-                <Pink>div</Pink>
-                <Yellow>{icons[0]}</Yellow>
-              </div>
-              <BorderLeft>
-                <section>
-                  <div>
-                    <Pink>display:</Pink>
-                    <Purple>
-                      flex
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                  <div>
-                    <Pink>alingn-items:</Pink>
-                    <Purple>
-                      center
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                  <div>
-                    <Pink>gap:</Pink>
-                    <Purple>
-                      20<Pink>px</Pink>
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                </section>
-              </BorderLeft>
-              <Yellow>{icons[1]}</Yellow>
-              <br />
-              <br />
-              <div>
-                <White>{icons[10]}</White>
-                <Pink>h1</Pink>
-                <Yellow>{icons[0]}</Yellow>
-              </div>
-              <BorderLeft>
-                <section>
-                  <div>
-                    <Pink>font-size:</Pink>
-                    <Purple>
-                      2.5<Pink>rem</Pink>
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                  <div>
-                    <Pink>margin-bottom:</Pink>
-                    <Purple>
-                      10<Pink>px</Pink>
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                </section>
-              </BorderLeft>
-              <Yellow>{icons[1]}</Yellow>
-            </section>
-          </BorderLeft>
-        )}
-        <div>
-          <Yellow>
-            `<White>;</White>
-          </Yellow>
-        </div>
-        <br />
-        <div>
-          {!const3 && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst3} />}
-          {const3 && <MdKeyboardArrowDown onClick={handleConst3} />}
-          <Pink>Const</Pink>
-          <Purple>CodeButton</Purple>
-          <Pink>=</Pink>
-          <Purple>
-            Styled<White>.div</White>
-            <Yellow>`</Yellow>
-          </Purple>
-        </div>
-        {const3 && (
-          <BorderLeft>
-            <section>
-              <div>
-                <Pink>widht:</Pink>
-                <Purple>
-                  200<Pink>px</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>padding:</Pink>
-                <Purple>
-                  10<Pink>px</Pink>
-                </Purple>
-                <Purple>
-                  10<Pink>px</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>margin-top:</Pink>
-                <Purple>
-                  50<Pink>px</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>display:</Pink>
-                <Purple>
-                  flex
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>align-items:</Pink>
-                <Purple>
-                  center
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>gap:</Pink>
-                <Purple>
-                  10<Pink>px</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>cursor:</Pink>
-                <Purple>
-                  pointer
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>border-radius:</Pink>
-                <Purple>
-                  10<Pink>px</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <div>
-                <Pink>border:</Pink>
-                <Purple>
-                  1<Pink>px</Pink>
-                </Purple>
-                <Purple>solid</Purple>
-                <White>#191d20;</White>
-              </div>
-              <div>
-                <Pink>background-color:</Pink>
-                <White>#1f2428;</White>
-              </div>
-              <div>
-                <Pink>transition:</Pink>
-                <Purple>
-                  .3<Pink>s</Pink>
-                  <White>;</White>
-                </Purple>
-              </div>
-              <br />
-              <div>
-                <Pink>svg</Pink>
-                <Yellow>{icons[0]}</Yellow>
-              </div>
-              <BorderLeft>
-                <section>
-                  <div>
-                    <Pink>font-size:</Pink>
-                    <Purple>
-                      18<Pink>px</Pink>
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                </section>
-              </BorderLeft>
-              <div>
-                <Yellow>{icons[1]}</Yellow>
-              </div>
-              <br />
-              <div>
-                <Pink>a</Pink>
-                <Yellow>{icons[0]}</Yellow>
-              </div>
-              <BorderLeft>
-                <section>
-                  <div>
-                    <Pink>display:</Pink>
-                    <Purple>
-                      flex
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                  <div>
-                    <Pink>align-items:</Pink>
-                    <Purple>
-                      center
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                  <div>
-                    <Pink>gap:</Pink>
-                    <Purple>
-                      10<Pink>px</Pink>
-                      <White>;</White>
-                    </Purple>
-                  </div>
-                  <div>
-                    <Pink>color:</Pink>
-                    <White>#fff;</White>
-                  </div>
-                </section>
-              </BorderLeft>
-              <div>
-                <Yellow>{icons[1]}</Yellow>
-              </div>
-              <br />
-              <div>
-                <Pink>
-                  :<Green>hover</Green>
-                </Pink>
-                <Yellow>{icons[0]}</Yellow>
-              </div>
-              <BorderLeft>
-                <section>
-                  <div>
-                    <Pink>background-color:</Pink>
-                    <White>#1f242870;</White>
-                  </div>
-                </section>
-              </BorderLeft>
-              <Yellow>{icons[1]}</Yellow>
-            </section>
-          </BorderLeft>
-        )}
-        <div>
-          <Yellow>
-            `<White>;</White>
-          </Yellow>
-        </div>
-      </Content>
-      <CodeButton onClick={handlePage}>
-        <GiReturnArrow />
-        Voltar a Home...
-      </CodeButton>
+      <section>
+        <Number>99</Number>
+        <Content>
+          <div>
+            <Yellow>
+              `<White>;</White>
+            </Yellow>
+          </div>
+        </Content>
+      </section>
     </Container>
   );
 };
@@ -874,12 +942,11 @@ export const HomeCode = ({ handlePage }) => {
 const Container = styled.div`
   height: calc(100vh - 90px);
   overflow: auto;
-  display: grid;
-  grid-template-columns: 30px auto;
   padding: 0 30px;
-  span {
-    font-size: 16px;
-    font-weight: 100;
+
+  section {
+    display: grid;
+    grid-template-columns: 30px auto;
   }
 `;
 
@@ -893,6 +960,7 @@ const Number = styled.div`
 
 const Content = styled.div`
   position: relative;
+
   div {
     display: flex;
     align-items: center;
@@ -913,23 +981,7 @@ const Content = styled.div`
 
 const BorderLeft = styled.div`
   border-left: 1px solid #7774746f;
-
-  > section {
-    padding-left: 15px;
-
-    > div {
-      > svg {
-        position: absolute;
-        left: -20px;
-        font-size: 20px;
-        opacity: 0.4;
-
-        :hover {
-          opacity: 1;
-        }
-      }
-    }
-  }
+  padding-left: 15px;
 `;
 
 const CodeButton = styled.div`
