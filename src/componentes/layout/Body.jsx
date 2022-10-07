@@ -22,6 +22,7 @@ const AsideContainer = styled.div`
 
   @media screen and (max-width: 648px) {
     
+    
   }
 `;
 
