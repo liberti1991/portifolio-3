@@ -30,7 +30,7 @@ export const SideBar = () => {
           <div onClick={handleClick}>{isOpen ? <MdClose /> : <GiHamburgerMenu />}</div>
           {listOne.map((item) => (
             <li key={item.id}>
-              <NavLink activeclassname="active" to={item.to}>
+              <NavLink activeclassname="active" to={item.to} onClick={() => setIsOpen(false)}>
                 {item.icon2}
               </NavLink>
             </li>
@@ -40,7 +40,7 @@ export const SideBar = () => {
         <ul>
           {listTwo.map((item) => (
             <li key={item.id}>
-              <NavLink activeclassname="active" to={item.to}>
+              <NavLink activeclassname="active" to={item.to} onClick={() => setIsOpen(false)}>
                 {item.icon2}
               </NavLink>
             </li>
@@ -48,7 +48,7 @@ export const SideBar = () => {
         </ul>
       </SectionOne>
 
-      <SectionTwo>
+      <SectionTwo isOpen={isOpen}>
         <div>
           <p>EXPLORADOR</p>
           <span>...</span>
@@ -58,7 +58,7 @@ export const SideBar = () => {
           <ul>
             {listOne.map((item) => (
               <li key={item.id}>
-                <NavLink to={item.to} style={{ color: `${item.color}` }}>
+                <NavLink to={item.to} style={{ color: `${item.color}` }} onClick={() => setIsOpen(false)}>
                   {item.icon1}
                   <span style={{ color: `${item.color2}` }}>{item.title}</span>
                 </NavLink>
@@ -67,6 +67,7 @@ export const SideBar = () => {
           </ul>
         )}
       </SectionTwo>
+      <Shadow isOpen={isOpen} onClick={handleClick}></Shadow>
     </Container>
   );
 };
@@ -78,7 +79,6 @@ const Container = styled.aside`
   height: calc(100vh - 55px);
 
   @media screen and (max-width: 648px) {
-
   }
 `;
 
@@ -149,6 +149,7 @@ const SectionTwo = styled.section`
   width: 75%;
   font-size: 12px;
   border-right: 1px solid #191d20;
+  position: relative;
 
   > div {
     display: flex;
@@ -182,8 +183,14 @@ const SectionTwo = styled.section`
       }
     }
   }
+
   @media screen and (max-width: 648px) {
-    display: none;
+    position: absolute;
+    height: calc(100vh - 90px);
+    top: 35px;
+    left: ${(p) => (p.isOpen ? "32px" : "-180px")};
+    z-index: 20;
+    transition: all 0.5s ease;
   }
 `;
 
@@ -198,18 +205,17 @@ const SwitchMenu = styled.article`
 `;
 
 const Shadow = styled.div`
-  width: 100%;
-  background-color: white;
-  height: 100vh;
-  top: 80px;
+  width: calc(100vw - 32px);
+  background-color: #fff;
+  height: calc(100vh - 90px);
+  top: 35px;
   position: absolute;
-  background-color: white;
   opacity: 0.2;
   transition: all 0.5s ease;
   z-index: 10;
-  left: ${(p) => (p.isOpen ? 0 : "-100%")};
+  left: ${(p) => (p.isOpen ? "32px" : "-100vw")};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 `;

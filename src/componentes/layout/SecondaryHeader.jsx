@@ -31,12 +31,12 @@ const List = styled.ul`
       border-top: 1px solid red;
       height: 100%;
     }
-    
+
     height: 100%;
     border: 1px solid #30363d;
     display: flex;
     align-items: center;
-    
+
     a {
       align-items: center;
       display: flex;
@@ -48,5 +48,8 @@ const List = styled.ul`
     :nth-child(6) {
       display: none;
     }
+  }
+  @media screen and (max-width: 648px) {
+    width: calc(100vw - 32px);
   }
 `;
