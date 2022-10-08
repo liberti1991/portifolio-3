@@ -51,6 +51,7 @@ const Container = styled.div`
   @media screen and (max-width: 648px) {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     overflow: auto;
 
     > img {
@@ -83,7 +84,7 @@ const Content = styled.span`
   @media screen and (max-width: 648px) {
     padding: 30px;
     > h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   }
 `;
