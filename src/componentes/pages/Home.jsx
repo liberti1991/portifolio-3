@@ -81,7 +81,7 @@ const Content = styled.span`
   }
 
   @media screen and (max-width: 648px) {
-    padding: 30px;
+    padding: 30px 20px;
     > h1 {
       font-size: 1.8rem;
     }
