@@ -81,7 +81,7 @@ const Content = styled.span`
   }
 
   @media screen and (max-width: 648px) {
-    padding: 30px 20px;
+    padding: 30px;
     > h1 {
       font-size: 1.8rem;
     }
@@ -89,7 +89,7 @@ const Content = styled.span`
 `;
 
 const CodeButton = styled.div`
-  width: 200px;
+  width: 210px;
   padding: 10px 20px;
   margin-top: 50px;
   display: flex;
