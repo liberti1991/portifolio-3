@@ -46,7 +46,18 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  height: calc(100% - 35px);
+  height: calc(100vh - 90px);
+
+  @media screen and (max-width: 648px) {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    > img {
+      width: 300px;
+      height: 300px;
+    }
+  }
 `;
 
 const Content = styled.span`
@@ -58,13 +69,22 @@ const Content = styled.span`
 
   > div {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 20px;
   }
 
   > h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 648px) {
+    padding: 30px;
+    > h1 {
+      font-size: 1.8rem;
+    }
   }
 `;
 
@@ -94,5 +114,11 @@ const CodeButton = styled.div`
 
   :hover {
     background-color: #1f242870;
+  }
+
+  @media screen and (max-width: 648px) {
+    :nth-child(2) {
+      margin-top: 0;
+    }
   }
 `;
