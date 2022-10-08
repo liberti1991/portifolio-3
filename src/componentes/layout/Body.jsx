@@ -21,7 +21,7 @@ const AsideContainer = styled.div`
   grid-template-columns: 220px auto;
 
   @media screen and (max-width: 648px) {
-    grid-template-columns: 32px auto
+    grid-template-columns: 40px auto
 
   }
 

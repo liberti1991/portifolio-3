@@ -50,6 +50,6 @@ const List = styled.ul`
     }
   }
   @media screen and (max-width: 648px) {
-    width: calc(100vw - 32px);
+    width: calc(100vw - 40px);
   }
 `;

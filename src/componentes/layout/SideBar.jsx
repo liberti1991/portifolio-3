@@ -130,7 +130,7 @@ const SectionOne = styled.section`
   }
 
   @media screen and (max-width: 648px) {
-    width: 15%;
+    width: 40px;
     border-right: 1px solid #191d20;
 
     > ul {
@@ -188,7 +188,7 @@ const SectionTwo = styled.section`
     position: absolute;
     height: calc(100vh - 90px);
     top: 35px;
-    left: ${(p) => (p.isOpen ? "32px" : "-180px")};
+    left: ${(p) => (p.isOpen ? "40px" : "-180px")};
     z-index: 20;
     transition: all 0.5s ease;
   }
@@ -205,7 +205,7 @@ const SwitchMenu = styled.article`
 `;
 
 const Shadow = styled.div`
-  width: calc(100vw - 32px);
+  width: calc(100vw - 40px);
   background-color: #fff;
   height: calc(100vh - 90px);
   top: 35px;
@@ -213,7 +213,7 @@ const Shadow = styled.div`
   opacity: 0.2;
   transition: all 0.5s ease;
   z-index: 10;
-  left: ${(p) => (p.isOpen ? "32px" : "-100vw")};
+  left: ${(p) => (p.isOpen ? "40px" : "-100vw")};
 
   @media screen and (min-width: 768px) {
     display: none;
