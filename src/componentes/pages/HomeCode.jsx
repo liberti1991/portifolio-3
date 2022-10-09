@@ -1613,6 +1613,17 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: 30px auto;
   }
+
+  @media screen and (max-width: 648px) {
+    padding: 5px 10px 15px;
+    font-size: 12px;
+
+    section {
+      grid-template-columns: 30px auto;
+      width: calc(100vw - 110px);
+      white-space: nowrap;
+    }
+  }
 `;
 
 const Number = styled.div`
@@ -1621,6 +1632,10 @@ const Number = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+
+  @media screen and (max-width: 648px) {
+    padding-left: 10px;
+  }
 `;
 
 const Content = styled.div`
@@ -1641,6 +1656,9 @@ const Content = styled.div`
         opacity: 1;
       }
     }
+  }
+  @media screen and (max-width: 648px) {
+    padding-right: 20px;
   }
 `;
 
@@ -1666,6 +1684,12 @@ const CodeButton = styled.div`
 
   :hover {
     background-color: #1f242870;
+  }
+
+  @media screen and (max-width: 648px) {
+    top: 90vh;
+    right: 12px;
+    width: 150px;
   }
 `;
 
