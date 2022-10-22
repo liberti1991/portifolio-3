@@ -974,28 +974,176 @@ export const HomeCode = ({ handlePage }) => {
               </BorderLeft>
             </Content>
           </section>
+
+          <section>
+            <Number>50</Number>
+            <Content>
+              <BorderLeft>
+                <br />
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>51</Number>
+            <Content>
+              <BorderLeft>
+                <Pink>@media</Pink>
+                <Purple>screen</Purple>
+                <Pink>and</Pink>
+                <Yellow>
+                  {icons[3]}
+                  <Blue>
+                    max-width<Pink>:</Pink>
+                  </Blue>
+                </Yellow>
+                <Purple>
+                  648
+                  <Pink>
+                    px<Yellow>{icons[4]}</Yellow>
+                  </Pink>
+                </Purple>
+                <White>{icons[0]}</White>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>52</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Blue>
+                    display<Pink>:</Pink>
+                  </Blue>
+                  <Purple>
+                    flex<White>;</White>
+                  </Purple>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>53</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Blue>
+                    flex-direction<Pink>:</Pink>
+                  </Blue>
+                  <Purple>
+                    column<White>;</White>
+                  </Purple>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>54</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Blue>
+                    justufy-content<Pink>:</Pink>
+                  </Blue>
+                  <Purple>
+                    space-arround<White>;</White>
+                  </Purple>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>55</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Blue>
+                    overflow<Pink>:</Pink>
+                  </Blue>
+                  <Purple>
+                    auto<White>;</White>
+                  </Purple>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>56</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <br />
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>57</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  {icons[10]}
+                  <Pink>img</Pink>
+                  <Yellow>{icons[0]}</Yellow>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>58</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <Blue>
+                      width<Pink>:</Pink>
+                    </Blue>
+                    <Purple>
+                      300<Pink>px</Pink>
+                      <White>;</White>
+                    </Purple>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>59</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <Blue>
+                      height<Pink>:</Pink>
+                    </Blue>
+                    <Purple>
+                      300<Pink>px</Pink>
+                      <White>;</White>
+                    </Purple>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>60</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Yellow>{icons[1]}</Yellow>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>61</Number>
+            <Content>
+              <BorderLeft>{icons[1]}</BorderLeft>
+            </Content>
+          </section>
         </>
       )}
-
       <section>
-        <Number>50</Number>
-        <Content>
-          <BorderLeft>
-            <br />
-          </BorderLeft>
-        </Content>
-      </section>
-
-      <section>
-        <Number>51</Number>
-        <Content>
-          <BorderLeft>
-            <Pink>@midea</Pink>
-          </BorderLeft>
-        </Content>
-      </section>
-      <section>
-        <Number>50</Number>
+        <Number>62</Number>
         <Content>
           <div>
             <Yellow>
@@ -1005,17 +1153,17 @@ export const HomeCode = ({ handlePage }) => {
         </Content>
       </section>
       <section>
-        <Number>52</Number>
+        <Number>63</Number>
         <Content>
           <br />
         </Content>
       </section>
       <section>
-        <Number>52</Number>
+        <Number>6664</Number>
         <Content>
           <div>
-            {!const2 && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst2} />}
-            {const2 && <MdKeyboardArrowDown onClick={handleConst2} />}
+            {!const2 && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst2} role="button" />}
+            {const2 && <MdKeyboardArrowDown onClick={handleConst2} role="button" />}
             <Pink>Const</Pink>
             <Purple>Content</Purple>
             <Pink>=</Pink>
