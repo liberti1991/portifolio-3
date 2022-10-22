@@ -966,7 +966,7 @@ export const HomeCode = ({ handlePage }) => {
                   </Blue>
                   <White> - </White>
                   <Purple>
-                    35<Pink>px</Pink>
+                    90<Pink>px</Pink>
                     <Yellow>{icons[4]}</Yellow>
                     <White>;</White>
                   </Purple>
@@ -976,6 +976,24 @@ export const HomeCode = ({ handlePage }) => {
           </section>
         </>
       )}
+
+      <section>
+        <Number>50</Number>
+        <Content>
+          <BorderLeft>
+            <br />
+          </BorderLeft>
+        </Content>
+      </section>
+
+      <section>
+        <Number>51</Number>
+        <Content>
+          <BorderLeft>
+            <Pink>@midea</Pink>
+          </BorderLeft>
+        </Content>
+      </section>
       <section>
         <Number>50</Number>
         <Content>
@@ -987,7 +1005,7 @@ export const HomeCode = ({ handlePage }) => {
         </Content>
       </section>
       <section>
-        <Number>51</Number>
+        <Number>52</Number>
         <Content>
           <br />
         </Content>
