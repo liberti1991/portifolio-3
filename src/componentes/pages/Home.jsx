@@ -21,7 +21,7 @@ export const Home = () => {
             <h1>Rodrigo Liberti</h1>
             <p>Desenvolvedor Front-End</p>
             <div>
-              <CodeButton onClick={handlePage}>
+              <CodeButton onClick={handlePage} role="button">
                 <BsFileEarmarkCode />
                 Ver código fonte...
               </CodeButton>
@@ -36,7 +36,7 @@ export const Home = () => {
           <img src={programmer} alt="programer img" />
         </Container>
       ) : (
-        <HomeCode handlePage={handlePage} />
+        <HomeCode handlePage={handlePage} role="button"/>
       )}
     </>
   );

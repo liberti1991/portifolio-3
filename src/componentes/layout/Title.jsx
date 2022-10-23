@@ -13,7 +13,6 @@ const Container = styled.div`
   }
 
   @media screen and (min-width: 648px) {
-    padding-right: 130px;
 
     h1 {
       padding: 45px 0;
