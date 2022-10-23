@@ -4,19 +4,21 @@ import { Title } from "../layout/Title";
 
 export const Contact = () => {
   return (
-    <Container>
+    <>
       <Title>
         <h1>Contatos</h1>
       </Title>
-      {dbFooter.map((item) => {
-        return (
-          <a key={item.id} href={item.url} rel={item.rel} target={item.target} title={item.title} alt={item.title}>
-            <div style={{ color: `${item.className}` }}>{item.svg}</div>
-            {item.title}
-          </a>
-        );
-      })}
-    </Container>
+      <Container>
+        {dbFooter.map((item) => {
+          return (
+            <a key={item.id} href={item.url} rel={item.rel} target={item.target} title={item.title} alt={item.title}>
+              <div style={{ color: `${item.className}`}}>{item.svg}</div>
+              {item.title}
+            </a>
+          );
+        })}
+      </Container>  
+    </>
   );
 };
 
@@ -78,7 +80,7 @@ const Container = styled.div`
       width: 13ch;
       opacity: 0;
       animation: type 1.3s steps(40, end) forwards;
-      animation-delay: 3s;
+      animation-delay:  3s;
     }
 
     :nth-child(4) {
