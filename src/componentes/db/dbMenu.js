@@ -64,6 +64,6 @@ export const dbMenu = [
     color: "",
     color2: "#fff",
     icon2: <VscSettingsGear />,
-    to: "/wq",
+    to: "/home",
   },
 ];
