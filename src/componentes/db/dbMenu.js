@@ -2,7 +2,7 @@ import { CgProfile } from "react-icons/cg";
 import { VscGithubAlt, VscFiles, VscSettingsGear } from "react-icons/vsc";
 import { BiCodeAlt } from "react-icons/bi";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
-import { RiHtml5Line } from "react-icons/ri";
+import { FaLaravel } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
@@ -20,9 +20,9 @@ export const dbMenu = [
     to: "/home",
   },{
     id: 2,
-    title: "sobre.html",
-    icon1: <RiHtml5Line />,
-    color: "#E44D26",
+    title: "sobre.php",
+    icon1: <FaLaravel />,
+    color: "#E6040F",
     color2: '#fff',
     icon2: <CgProfile />,
     to: "/sobre",
