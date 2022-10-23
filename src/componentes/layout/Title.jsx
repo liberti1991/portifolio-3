@@ -13,11 +13,11 @@ const Container = styled.div`
   }
 
   @media screen and (min-width: 648px) {
-    padding-right: 100px;
+    padding-right: 130px;
 
     h1 {
       padding: 45px 0;
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 `;

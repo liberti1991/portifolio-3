@@ -91,7 +91,7 @@ const Content = styled.span`
 `;
 
 const CodeButton = styled.div`
-  width: 210px;
+  width: 210px;  
   padding: 10px 20px;
   margin-top: 50px;
   display: flex;
