@@ -12,7 +12,7 @@ export const About = () => {
       <Title>
         <h1>Sobre</h1>
       </Title>
-      <p>Rodrigo Liberti, 31 anos Curitiba/Pr.</p>
+      <p>Rodrigo Liberti, 31 anos - Curitiba/Pr.</p>
       <p>Desenvolvedor Front-End trabalho com ReactJs, atualmente estudando Laravel para me tornar um desenvolvedor Fullstack.</p>
       <p>Experiência como desenvolvedor ReactJs 1+ Trabalhei com portais web aonde realizei um clone do Trello.</p>
       <p>
