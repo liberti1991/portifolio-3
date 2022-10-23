@@ -145,8 +145,7 @@ export const HomeCode = ({ handlePage }) => {
         <Number>12</Number>
         <Content>
           <div>
-            {!exportToggle && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleExport} />}
-            {exportToggle && <MdKeyboardArrowDown onClick={handleExport} />}
+            {exportToggle ? <MdKeyboardArrowDown onClick={handleExport} role="button" /> : <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleExport} role="button" />}
             <Pink>export</Pink>
             <Pink>const</Pink>
             <Green>Home</Green>
@@ -895,8 +894,7 @@ export const HomeCode = ({ handlePage }) => {
         <Number>45</Number>
         <Content>
           <div>
-            {!const1 && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst1} />}
-            {const1 && <MdKeyboardArrowDown onClick={handleConst1} />}
+            {const1 ? <MdKeyboardArrowDown onClick={handleConst1} role="button" /> : <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst1} role="button" />}
             <Pink>Const</Pink>
             <Purple>Container</Purple>
             <Pink>=</Pink>
@@ -914,9 +912,17 @@ export const HomeCode = ({ handlePage }) => {
             <Content>
               <BorderLeft>
                 <div>
-                  <Pink>display:</Pink>
+                  <Blue>
+                    display
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
                   <Purple>
-                    grid<White>;</White>
+                    grid
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </div>
               </BorderLeft>
@@ -927,13 +933,20 @@ export const HomeCode = ({ handlePage }) => {
             <Content>
               <BorderLeft>
                 <div>
-                  <Pink>grid-template-columns:</Pink>
+                  <Blue>
+                    grid-template-columns
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
                   <Purple>
                     1<Pink>fr</Pink>
                   </Purple>
                   <Purple>
                     1<Pink>fr</Pink>
-                    <White>;</White>
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </div>
               </BorderLeft>
@@ -944,9 +957,17 @@ export const HomeCode = ({ handlePage }) => {
             <Content>
               <BorderLeft>
                 <div>
-                  <Pink>align-items:</Pink>
+                  <Blue>
+                    align-items
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
                   <Purple>
-                    center<White>;</White>
+                    center
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </div>
               </BorderLeft>
@@ -957,24 +978,30 @@ export const HomeCode = ({ handlePage }) => {
             <Content>
               <BorderLeft>
                 <div>
-                  <Pink>height:</Pink>
+                  <Blue>
+                    height
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
                   <Blue>
                     calc<Yellow>{icons[3]}</Yellow>
                     <Purple>
-                      100<Pink>%</Pink>
+                      100<Pink>vh</Pink>
                     </Purple>
                   </Blue>
-                  <White> - </White>
+                  <Pink> - </Pink>
                   <Purple>
                     90<Pink>px</Pink>
                     <Yellow>{icons[4]}</Yellow>
-                    <White>;</White>
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </div>
               </BorderLeft>
             </Content>
           </section>
-
           <section>
             <Number>50</Number>
             <Content>
@@ -993,7 +1020,10 @@ export const HomeCode = ({ handlePage }) => {
                 <Yellow>
                   {icons[3]}
                   <Blue>
-                    max-width<Pink>:</Pink>
+                    max-width
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
                   </Blue>
                 </Yellow>
                 <Purple>
@@ -1012,10 +1042,16 @@ export const HomeCode = ({ handlePage }) => {
               <BorderLeft>
                 <BorderLeft>
                   <Blue>
-                    display<Pink>:</Pink>
+                    display
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
                   </Blue>
                   <Purple>
-                    flex<White>;</White>
+                    flex
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </BorderLeft>
               </BorderLeft>
@@ -1027,10 +1063,16 @@ export const HomeCode = ({ handlePage }) => {
               <BorderLeft>
                 <BorderLeft>
                   <Blue>
-                    flex-direction<Pink>:</Pink>
+                    flex-direction
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
                   </Blue>
                   <Purple>
-                    column<White>;</White>
+                    column
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </BorderLeft>
               </BorderLeft>
@@ -1042,10 +1084,16 @@ export const HomeCode = ({ handlePage }) => {
               <BorderLeft>
                 <BorderLeft>
                   <Blue>
-                    justufy-content<Pink>:</Pink>
+                    justify-content
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
                   </Blue>
                   <Purple>
-                    space-arround<White>;</White>
+                    space-arround
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </BorderLeft>
               </BorderLeft>
@@ -1057,10 +1105,16 @@ export const HomeCode = ({ handlePage }) => {
               <BorderLeft>
                 <BorderLeft>
                   <Blue>
-                    overflow<Pink>:</Pink>
+                    overflow
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
                   </Blue>
                   <Purple>
-                    auto<White>;</White>
+                    auto
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </BorderLeft>
               </BorderLeft>
@@ -1095,11 +1149,16 @@ export const HomeCode = ({ handlePage }) => {
                 <BorderLeft>
                   <BorderLeft>
                     <Blue>
-                      width<Pink>:</Pink>
+                      width
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
                     </Blue>
                     <Purple>
                       300<Pink>px</Pink>
-                      <White>;</White>
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
                     </Purple>
                   </BorderLeft>
                 </BorderLeft>
@@ -1113,11 +1172,16 @@ export const HomeCode = ({ handlePage }) => {
                 <BorderLeft>
                   <BorderLeft>
                     <Blue>
-                      height<Pink>:</Pink>
+                      height
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
                     </Blue>
                     <Purple>
                       300<Pink>px</Pink>
-                      <White>;</White>
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
                     </Purple>
                   </BorderLeft>
                 </BorderLeft>
@@ -1147,7 +1211,10 @@ export const HomeCode = ({ handlePage }) => {
         <Content>
           <div>
             <Yellow>
-              `<White>;</White>
+              `
+              <White>
+                <Strong>;</Strong>
+              </White>
             </Yellow>
           </div>
         </Content>
@@ -1159,7 +1226,7 @@ export const HomeCode = ({ handlePage }) => {
         </Content>
       </section>
       <section>
-        <Number>6664</Number>
+        <Number>64</Number>
         <Content>
           <div>
             {!const2 && <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst2} role="button" />}
@@ -1177,21 +1244,28 @@ export const HomeCode = ({ handlePage }) => {
       {const2 && (
         <>
           <section>
-            <Number>53</Number>
+            <Number>65</Number>
             <Content>
               <BorderLeft>
                 <div>
-                  <Pink>padding:</Pink>
+                  <Blue>
+                    padding
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
                   <Purple>
                     50<Pink>px</Pink>
-                    <White>;</White>
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
                   </Purple>
                 </div>
               </BorderLeft>
             </Content>
           </section>
           <section>
-            <Number>54</Number>
+            <Number>66</Number>
             <Content>
               <BorderLeft>
                 <br />
@@ -1199,7 +1273,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>55</Number>
+            <Number>67</Number>
             <Content>
               <BorderLeft>
                 <div>
@@ -1211,15 +1285,22 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>56</Number>
+            <Number>68</Number>
             <Content>
               <BorderLeft>
                 <BorderLeft>
                   <div>
-                    <Pink>font-size:</Pink>
+                    <Blue>
+                      font-size
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
                     <Purple>
                       16<Pink>px</Pink>
-                      <White>;</White>
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
                     </Purple>
                   </div>
                 </BorderLeft>
@@ -1227,7 +1308,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>57</Number>
+            <Number>69</Number>
             <Content>
               <BorderLeft>
                 <Yellow>{icons[1]}</Yellow>
@@ -1235,7 +1316,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>58</Number>
+            <Number>70</Number>
             <Content>
               <BorderLeft>
                 <br />
@@ -1243,7 +1324,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>59</Number>
+            <Number>71</Number>
             <Content>
               <BorderLeft>
                 <div>
@@ -1255,12 +1336,40 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>60</Number>
+            <Number>72</Number>
             <Content>
               <BorderLeft>
                 <BorderLeft>
                   <div>
-                    <Pink>display:</Pink>
+                    <Blue>
+                      display
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
+                    <Purple>
+                      flex
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
+                    </Purple>
+                  </div>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>73</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <div>
+                    <Blue>
+                      flex-wrap
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
                     <Purple>
                       flex
                       <White>;</White>
@@ -1271,15 +1380,24 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>61</Number>
+            <Number>74</Number>
             <Content>
               <BorderLeft>
                 <BorderLeft>
                   <div>
-                    <Pink>alingn-items:</Pink>
+                    <Blue>
+                      alingn-items
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
                     <Purple>
                       center
-                      <White>;</White>
+                      <White>
+                        <Strong>
+                          <Strong>;</Strong>
+                        </Strong>
+                      </White>
                     </Purple>
                   </div>
                 </BorderLeft>
@@ -1287,15 +1405,24 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>62</Number>
+            <Number>75</Number>
             <Content>
               <BorderLeft>
                 <BorderLeft>
                   <div>
-                    <Pink>gap:</Pink>
+                    <Blue>
+                      justify-content
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
                     <Purple>
-                      20<Pink>px</Pink>
-                      <White>;</White>
+                      center
+                      <White>
+                        <Strong>
+                          <Strong>;</Strong>
+                        </Strong>
+                      </White>
                     </Purple>
                   </div>
                 </BorderLeft>
@@ -1303,7 +1430,30 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>63</Number>
+            <Number>76</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <div>
+                    <Blue>
+                      gap
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
+                    <Purple>
+                      20<Pink>px</Pink>
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
+                    </Purple>
+                  </div>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>77</Number>
             <Content>
               <BorderLeft>
                 <Yellow>{icons[1]}</Yellow>
@@ -1311,7 +1461,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>64</Number>
+            <Number>78</Number>
             <Content>
               <BorderLeft>
                 <br />
@@ -1319,7 +1469,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>65</Number>
+            <Number>79</Number>
             <Content>
               <BorderLeft>
                 <div>
@@ -1331,15 +1481,22 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>66</Number>
+            <Number>80</Number>
             <Content>
               <BorderLeft>
                 <BorderLeft>
                   <div>
-                    <Pink>font-size:</Pink>
+                    <Blue>
+                      font-size
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
                     <Purple>
                       2.5<Pink>rem</Pink>
-                      <White>;</White>
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
                     </Purple>
                   </div>
                 </BorderLeft>
@@ -1347,15 +1504,22 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>67</Number>
+            <Number>81</Number>
             <Content>
               <BorderLeft>
                 <BorderLeft>
                   <div>
-                    <Pink>margin-bottom:</Pink>
+                    <Blue>
+                      margin-bottom
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
                     <Purple>
                       10<Pink>px</Pink>
-                      <White>;</White>
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
                     </Purple>
                   </div>
                 </BorderLeft>
@@ -1363,7 +1527,136 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>68</Number>
+            <Number>82</Number>
+            <Content>
+              <BorderLeft>
+                <Yellow>{icons[1]}</Yellow>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>83</Number>
+            <Content>
+              <BorderLeft>
+                <Yellow>
+                  <br />
+                </Yellow>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>84</Number>
+            <Content>
+              <BorderLeft>
+                <Pink>@media</Pink>
+                <Purple>screen</Purple>
+                <Pink>and</Pink>
+                <Yellow>
+                  {icons[3]}
+                  <Blue>
+                    max-width
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
+                </Yellow>
+                <Purple>
+                  648
+                  <Pink>
+                    px<Yellow>{icons[4]}</Yellow>
+                  </Pink>
+                </Purple>
+                <White>{icons[0]}</White>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>85</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <div>
+                    <Blue>
+                      padding
+                      <Pink>
+                        <Strong>:</Strong>
+                      </Pink>
+                    </Blue>
+                    <Purple>
+                      30
+                      <Pink>
+                        px
+                        <White>
+                          <Strong>;</Strong>
+                        </White>
+                      </Pink>
+                    </Purple>
+                  </div>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>86</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <br />
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>87</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <div>
+                    <White>{icons[10]}</White>
+                    <Pink>h1</Pink>
+                    <Yellow>{icons[0]}</Yellow>
+                  </div>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>88</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <BorderLeft>
+                    <div>
+                      <Blue>
+                        font-size
+                        <Pink>
+                          <Strong>:</Strong>
+                        </Pink>
+                      </Blue>
+                      <Purple>
+                        2<Pink>rem</Pink>
+                        <White>
+                          <Strong>;</Strong>
+                        </White>
+                      </Purple>
+                    </div>
+                  </BorderLeft>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>89</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Yellow>{icons[1]}</Yellow>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>90</Number>
             <Content>
               <BorderLeft>
                 <Yellow>{icons[1]}</Yellow>
@@ -1373,11 +1666,14 @@ export const HomeCode = ({ handlePage }) => {
         </>
       )}
       <section>
-        <Number>69</Number>
+        <Number>91</Number>
         <Content>
           <div>
             <Yellow>
-              `<White>;</White>
+              `
+              <White>
+                <Strong>;</Strong>
+              </White>
             </Yellow>
           </div>
         </Content>
@@ -1893,4 +2189,8 @@ const Purple = styled.span`
 
 const Red = styled.span`
   color: red;
+`;
+
+const Strong = styled.strong`
+  margin-left: 2px;
 `;
