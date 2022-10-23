@@ -37,7 +37,7 @@ export const dbProjectCard = [
     id: 0,
     title: "Carteira Virtual",
     content:
-      "Projeto de uma carteira virtual. O projeto postado não tem back somente pra apresentação do mesmo. LOGIN: aaa@gmail.com SENHA: aaa",
+      "Projeto de uma carteira virtual inplementação de temas. O projeto postado não tem back somente pra apresentação do mesmo. LOGIN: aaa@gmail.com SENHA: aaa",
     target: "_blank",
     url: "https://minha-carteira-virtual.netlify.app/",
     svg: <MdDoubleArrow />,
