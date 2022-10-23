@@ -16,11 +16,13 @@ export const SideBar = () => {
   const handleClick = () => setIsOpen((previousState) => !previousState);
 
   //excluindo o icone da engrenagem
-  const listOne = dbMenu.slice(0, 5);
+  // const listOne = dbMenu.slice(0, 5); com git
+  const listOne = dbMenu.slice(0, 4);
 
   //separando itens em expecifico e depois concatando ambos
   const temp1 = dbMenu.slice(1, 2);
-  const temp2 = dbMenu.slice(5, 6);
+  // const temp2 = dbMenu.slice(5, 6); com git
+  const temp2 = dbMenu.slice(4, 5);
   const listTwo = temp1.concat(temp2);
 
   return (

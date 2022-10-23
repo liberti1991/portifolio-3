@@ -44,6 +44,10 @@ const List = styled.ul`
       font-size: 14px;
       gap: 10px;
     }
+    /* apagar o filhor 5 quando tiver o git  */
+    :nth-child(5) {
+      display: none;
+    }
 
     :nth-child(6) {
       display: none;
