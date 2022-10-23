@@ -19,7 +19,7 @@ const Container = styled.div`
   overflow-y: auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 900px) {
     padding: 0 150px;
   }
 `;

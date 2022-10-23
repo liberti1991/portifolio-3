@@ -36,7 +36,7 @@ export const Home = () => {
           <img src={programmer} alt="programer img" />
         </Container>
       ) : (
-        <HomeCode handlePage={handlePage} role="button"/>
+        <HomeCode handlePage={handlePage} role="button" />
       )}
     </>
   );
@@ -48,7 +48,7 @@ const Container = styled.div`
   align-items: center;
   height: calc(100vh - 90px);
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -83,7 +83,7 @@ const Content = styled.span`
 
   @media screen and (max-width: 648px) {
     padding: 30px;
-    
+
     > h1 {
       font-size: 2rem;
     }
@@ -91,7 +91,7 @@ const Content = styled.span`
 `;
 
 const CodeButton = styled.div`
-  width: 210px;  
+  width: 210px;
   padding: 10px 20px;
   margin-top: 50px;
   display: flex;

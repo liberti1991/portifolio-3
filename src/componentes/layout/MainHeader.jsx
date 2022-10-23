@@ -75,7 +75,7 @@ const Container = styled.section`
     margin-left: -350px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     gap: 10px;
 
     ul {

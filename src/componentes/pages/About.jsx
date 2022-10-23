@@ -37,7 +37,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-  
+
   > p {
     text-align: center;
     margin-bottom: 10px;
@@ -81,7 +81,7 @@ const Container = styled.div`
     }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 900px) {
     padding: 20px 130px;
 
     > p {

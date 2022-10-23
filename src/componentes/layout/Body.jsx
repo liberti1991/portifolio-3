@@ -20,7 +20,7 @@ const AsideContainer = styled.div`
   display: grid;
   grid-template-columns: 220px auto;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     grid-template-columns: 40px auto;
   }
 
