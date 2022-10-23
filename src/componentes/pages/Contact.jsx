@@ -140,4 +140,10 @@ const Container = styled.div`
     padding-top: 0px;
     padding-left: 50px;
   }
+
+  @media screen and (max-height: 400px) {
+    height: calc(100vh - 90px);
+    overflow: auto;
+    padding-bottom: 15px;
+  }
 `;
