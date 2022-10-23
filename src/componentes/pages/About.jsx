@@ -92,6 +92,7 @@ const Container = styled.div`
   @media screen and (max-height: 400px) {
     height: calc(100vh - 90px);
     overflow: auto;
+    padding-bottom: 15px;
   }
 `;
 
