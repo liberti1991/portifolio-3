@@ -2216,7 +2216,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>1222</Number>
+            <Number>122</Number>
             <Content>
               <BorderLeft>
                 <BorderLeft>

@@ -128,7 +128,7 @@ const SectionOne = styled.section`
     }
   }
 
-  @media screen and (max-width: 648px) {
+  @media screen and (max-width: 800px) {
     width: 40px;
     border-right: 1px solid #191d20;
 
@@ -183,7 +183,7 @@ const SectionTwo = styled.section`
     }
   }
 
-  @media screen and (max-width: 648px) {
+  @media screen and (max-width: 800px) {
     position: absolute;
     height: calc(100vh - 90px);
     top: 35px;
@@ -214,7 +214,7 @@ const Shadow = styled.div`
   z-index: 10;
   left: ${(p) => (p.isOpen ? "40px" : "-100vw")};
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
     display: none;
   }
 `;

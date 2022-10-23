@@ -48,7 +48,7 @@ const Container = styled.div`
   align-items: center;
   height: calc(100vh - 90px);
 
-  @media screen and (max-width: 648px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;

@@ -37,7 +37,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-
+  
   > p {
     text-align: center;
     margin-bottom: 10px;
@@ -81,12 +81,17 @@ const Container = styled.div`
     }
   }
 
-  @media screen and (min-width: 648px) {
+  @media screen and (min-width: 800px) {
     padding: 20px 130px;
 
     > p {
       font-size: 1.4rem;
     }
+  }
+
+  @media screen and (max-height: 400px) {
+    height: calc(100vh - 90px);
+    overflow: auto;
   }
 `;
 
