@@ -28,12 +28,30 @@ import id07img01 from "../../assets/img/id07img01.jpg";
 import id07img02 from "../../assets/img/id07img02.jpg";
 import id07img03 from "../../assets/img/id07img03.jpg";
 
+import id08img01 from "../../assets/img/id08img01.jpg";
+import id08img02 from "../../assets/img/id08img02.jpg";
+import id08img03 from "../../assets/img/id08img03.jpg";
+
 export const dbProjectCard = [
   {
     id: 0,
+    title: "Carteira Virtual",
+    content:
+      "Projeto de uma carteira virtual. O projeto postado não tem back somente pra apresentação do mesmo. LOGIN: aaa@gmail.com SENHA: aaa",
+    target: "_blank",
+    url: "https://minha-carteira-virtual.netlify.app/",
+    svg: <MdDoubleArrow />,
+    svgName: "Visualizar Site",
+    img01: id08img01,
+    img02: id08img02,
+    img03: id08img03,
+    alt: "Imagens Site",
+  },
+  {
+    id: 1,
     title: "The Breaking Bad",
     content:
-      "Página teste, com objetivo de criação de hooks e implementalos em Reacj Js.",
+      "Página teste, com objetivo de criação de hooks e implementalos em ReacjJs.",
     target: "_blank",
     url: "https://the-breakingbad.netlify.app/",
     svg: <MdDoubleArrow />,
@@ -44,7 +62,7 @@ export const dbProjectCard = [
     alt: "Imagens Site",
   },
   {
-    id: 1,
+    id: 2,
     title: "The Rick and Morty",
     content:
       "Página teste, com objetivo de implementar requisições de um Banco de Dados com Axios, UseCallback e UseMemo.",
@@ -58,7 +76,7 @@ export const dbProjectCard = [
     alt: "Imagens Site",
   },
   {
-   id: 2,
+   id: 3,
     title: "Chute Boxe - Santa Felicidade",
     content:
       "Projeto realizado para uma academia, com objetivo a divulgação de suas artes marciais, juntamente com os horários das aulas.",
@@ -73,7 +91,7 @@ export const dbProjectCard = [
     alt: "Imagens Site",
   },
   {
-    id: 3,
+    id: 4,
     title: "Fiscalc", 
     content:
       "Projeto realizado para uma agência como Freelancer, criação de algumas telas do sistema interno de contabilidade.",
@@ -88,7 +106,7 @@ export const dbProjectCard = [
     alt: "Imagens Site",
   },
   {
-    id: 4,
+    id: 5,
     title: "Teste de Api",
     content:
       "Página teste, com objetivo de implementar requisições de um Banco de Dados e consumir as informações no Front-End.",
@@ -102,7 +120,7 @@ export const dbProjectCard = [
     alt: "Imagens Site",
   },
   {
-    id: 5,
+    id: 6,
     title: "WebLog",
     content:
       "Projeto realizado para uma agência como Freelancer, aonde foi desenvolvido a página de DashBoard, de uma Loja Online estilo Olx.",
@@ -116,7 +134,7 @@ export const dbProjectCard = [
     alt: "Imagens Site",
   },
   {
-    id: 6,
+    id: 7,
     title: "AutoDJ",
     content:
       "Projeto realizado para uma agência como Freelancer, aonde desenvolvi a paginação das PlayList.",
