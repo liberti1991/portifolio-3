@@ -209,8 +209,8 @@ export const HomeCode = ({ handlePage }) => {
                     </Orange>
                   </Green>
                   <Pink>{icons[2]}</Pink>
-                  <Pink>!</Pink>
                   <Orange>
+                    <Pink>!</Pink>
                     <i>previousState</i>
                     <Orange>{icons[4]}</Orange>
                   </Orange>
@@ -479,7 +479,9 @@ export const HomeCode = ({ handlePage }) => {
                             <BorderLeft>
                               <BorderLeft>
                                 <BorderLeft>
-                                  <White>Ver código fonte<strong>...</strong></White>
+                                  <White>
+                                    Ver código fonte<strong>...</strong>
+                                  </White>
                                 </BorderLeft>
                               </BorderLeft>
                             </BorderLeft>
@@ -622,7 +624,9 @@ export const HomeCode = ({ handlePage }) => {
                               <BorderLeft>
                                 <BorderLeft>
                                   <BorderLeft>
-                                    <White>Meus Projetos<strong>...</strong></White>
+                                    <White>
+                                      Meus Projetos<strong>...</strong>
+                                    </White>
                                   </BorderLeft>
                                 </BorderLeft>
                               </BorderLeft>
@@ -901,7 +905,10 @@ export const HomeCode = ({ handlePage }) => {
             <Purple>Container</Purple>
             <Pink>=</Pink>
             <Purple>
-              Styled<White><strong>.</strong>div</White>
+              Styled
+              <White>
+                <strong>.</strong>div
+              </White>
               <Yellow>`</Yellow>
             </Purple>
           </div>
@@ -1237,7 +1244,10 @@ export const HomeCode = ({ handlePage }) => {
             <Purple>Content</Purple>
             <Pink>=</Pink>
             <Purple>
-              Styled<White><strong>.</strong>span</White>
+              Styled
+              <White>
+                <strong>.</strong>span
+              </White>
               <Yellow>`</Yellow>
             </Purple>
           </div>
@@ -1695,7 +1705,10 @@ export const HomeCode = ({ handlePage }) => {
             <Purple>CodeButton</Purple>
             <Pink>=</Pink>
             <Purple>
-              Styled<White><strong>.</strong>div</White>
+              Styled
+              <White>
+                <strong>.</strong>div
+              </White>
               <Yellow>`</Yellow>
             </Purple>
           </div>
