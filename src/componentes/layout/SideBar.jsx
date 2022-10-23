@@ -77,9 +77,6 @@ const Container = styled.aside`
   display: flex;
   width: 220px;
   height: calc(100vh - 55px);
-
-  @media screen and (max-width: 648px) {
-  }
 `;
 
 const SectionOne = styled.section`
