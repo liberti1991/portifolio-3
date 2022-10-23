@@ -2206,9 +2206,9 @@ export const HomeCode = ({ handlePage }) => {
               <BorderLeft>
                 <BorderLeft>
                   <div>
-                    <White>{icons[10]}</White>
-                    <Pink>h1</Pink>
-                    <Yellow>{icons[0]}</Yellow>
+                    <i><Pink><Strong>: </Strong></Pink>
+                    <Green>nth-child</Green>
+                    </i>
                   </div>
                 </BorderLeft>
               </BorderLeft>
