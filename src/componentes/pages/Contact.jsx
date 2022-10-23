@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { dbFooter } from "../db/dbfooter";
+import { Title } from "../layout/Title";
 
 export const Contact = () => {
   return (
     <>
-      <h1>
+      <Title>
         <h1>Contatos</h1>
-      </h1>
+      </Title>
       <Container>
         {dbFooter.map((item) => {
           return (
@@ -69,27 +70,27 @@ const Container = styled.div`
     }
 
     :nth-child(2) {
-      width: 10ch;
+      width: 10.5ch;
       opacity: 0;
       animation: type 1.3s steps(40, end) forwards;
       animation-delay: 1.5s;
     }
 
     :nth-child(3) {
-      width: 12ch;
+      width: 13ch;
       opacity: 0;
       animation: type 1.3s steps(40, end) forwards;
       animation-delay:  3s;
     }
 
     :nth-child(4) {
-      width: 22ch;
+      width: 24ch;
       opacity: 0;
       animation: type 2s steps(40, end) forwards;
       animation-delay: 4.5s;
     }
     :nth-child(5) {
-      width: 11.5ch;
+      width: 12.5ch;
       opacity: 0;
       animation: type2 1.3s steps(40, end) forwards, blink 0.7s step-end infinite alternate;
       animation-delay: 6.5s;
