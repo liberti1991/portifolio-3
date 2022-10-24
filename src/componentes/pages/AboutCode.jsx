@@ -20,9 +20,6 @@ export const HomeCode = ({ handlePage }) => {
   const [const2, const2Set] = useState(true);
   const handleConst2 = () => const2Set((previousState) => !previousState);
 
-  const [const3, const3Set] = useState(true);
-  const handleConst3 = () => const3Set((previousState) => !previousState);
-
   return (
     <Container>
       <section>
@@ -933,53 +930,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>34</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <BorderLeft>
-                              <div>
-                                <White>
-                                  {icons[9]}
-                                  <Pink>div</Pink>
-                                </White>
-                                <White>{icons[12]}</White>
-                              </div>
-                            </BorderLeft>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>35</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <div>
-                              <White>{icons[11]}</White>
-                              <Blue>
-                                <i>Content</i>
-                                <White>{icons[10]}</White>
-                              </Blue>
-                            </div>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>36</Number>
+                <Number>43</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -989,20 +940,8 @@ export const HomeCode = ({ handlePage }) => {
                             <div>
                               <White>
                                 {icons[9]}
-                                <Pink>img</Pink>
+                                <Pink>div</Pink>
                               </White>
-                              <Green>
-                                <i>src</i>
-                                <Pink>=</Pink>
-                                <Brown>{icons[0]}</Brown>
-                                <Purple>programmer</Purple>
-                                <Brown>{icons[1]}</Brown>
-                              </Green>
-                              <Green>
-                                <i>alt</i>
-                                <Pink>=</Pink>
-                                <Yellow>"programmer img"</Yellow>
-                              </Green>
                               <White>{icons[12]}</White>
                             </div>
                           </BorderLeft>
@@ -1013,7 +952,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>37</Number>
+                <Number>44</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -1033,7 +972,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>38</Number>
+                <Number>45</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -1049,7 +988,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>39</Number>
+                <Number>46</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -1084,7 +1023,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>40</Number>
+                <Number>47</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -1099,7 +1038,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>41</Number>
+                <Number>48</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -1113,7 +1052,7 @@ export const HomeCode = ({ handlePage }) => {
             </>
           )}
           <section>
-            <Number>42</Number>
+            <Number>49</Number>
             <Content>
               <BorderLeft>
                 <div>
@@ -1126,7 +1065,7 @@ export const HomeCode = ({ handlePage }) => {
         </>
       )}
       <section>
-        <Number>43</Number>
+        <Number>50</Number>
         <Content>
           <div>
             <Yellow>{icons[1]}</Yellow>
@@ -1135,13 +1074,14 @@ export const HomeCode = ({ handlePage }) => {
         </Content>
       </section>
       <section>
-        <Number>44</Number>
+        <Number>51</Number>
         <Content>
           <div>
             <br />
           </div>
         </Content>
       </section>
+      {/* sdgs */}
       <section>
         <Number>45</Number>
         <Content>
@@ -1938,607 +1878,6 @@ export const HomeCode = ({ handlePage }) => {
       </section>
       <section>
         <Number>92</Number>
-        <Content>
-          <br />
-        </Content>
-      </section>
-      <section>
-        <Number>93</Number>
-        <Content>
-          <div>
-            {const3 ? <MdKeyboardArrowDown onClick={handleConst3} role="button" /> : <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst3} role="button" />}
-            <Pink>Const</Pink>
-            <Purple>CodeButton</Purple>
-            <Pink>=</Pink>
-            <Purple>
-              Styled
-              <White>
-                <strong>.</strong>div
-              </White>
-              <Yellow>`</Yellow>
-            </Purple>
-          </div>
-        </Content>
-      </section>
-      {const3 && (
-        <>
-          <section>
-            <Number>94</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    widht
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    210<Pink>px</Pink>
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>95</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    padding
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    10<Pink>px</Pink>
-                  </Purple>
-                  <Purple>
-                    20<Pink>px</Pink>
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>96</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    margin-top
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    50<Pink>px</Pink>
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>97</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    display
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    flex
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>98</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    align-items
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    center
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>99</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    gap
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    10<Pink>px</Pink>
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>100</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Pink>
-                    cursor<Strong>:</Strong>
-                  </Pink>
-                  <Purple>
-                    pointer
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>101</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    border-radius
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    10<Pink>px</Pink>
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>102</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    border
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    1<Pink>px</Pink>
-                  </Purple>
-                  <Purple>
-                    solid #191d20
-                    <Strong>
-                      <White>;</White>
-                    </Strong>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>103</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    background-color
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    #1f2428
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>104</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Blue>
-                    transition
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                  <Purple>
-                    0.3<Pink>s</Pink>
-                    <White>
-                      <Strong>;</Strong>
-                    </White>
-                  </Purple>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>105</Number>
-            <Content>
-              <BorderLeft>
-                <br />
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>106</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <White>{icons[10]}</White>
-                  <Pink>svg</Pink>
-                  <Yellow>{icons[0]}</Yellow>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>107</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <div>
-                    <Blue>
-                      font-size
-                      <Pink>
-                        <Strong>:</Strong>
-                      </Pink>
-                    </Blue>
-                    <Purple>
-                      18<Pink>px</Pink>
-                      <White>
-                        <Strong>;</Strong>
-                      </White>
-                    </Purple>
-                  </div>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>108</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Yellow>{icons[1]}</Yellow>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>109</Number>
-            <Content>
-              <BorderLeft>
-                <br />
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>110</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <White>{icons[10]}</White>
-                  <Pink>a</Pink>
-                  <Yellow>{icons[0]}</Yellow>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>111</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <div>
-                    <Blue>
-                      display
-                      <Pink>
-                        <Strong>:</Strong>
-                      </Pink>
-                    </Blue>
-                    <Purple>
-                      flex
-                      <White>
-                        <Strong>;</Strong>
-                      </White>
-                    </Purple>
-                  </div>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>112</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <div>
-                    <Blue>
-                      align-items
-                      <Pink>
-                        <Strong>:</Strong>
-                      </Pink>
-                    </Blue>
-                    <Purple>
-                      center
-                      <White>
-                        <Strong>;</Strong>
-                      </White>
-                    </Purple>
-                  </div>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>113</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <div>
-                    <Blue>
-                      gap
-                      <Pink>
-                        <Strong>:</Strong>
-                      </Pink>
-                    </Blue>
-                    <Purple>
-                      10<Pink>px</Pink>
-                      <White>
-                        <Strong>;</Strong>
-                      </White>
-                    </Purple>
-                  </div>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>114</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <div>
-                    <Blue>
-                      color
-                      <Pink>
-                        <Strong>:</Strong>
-                      </Pink>
-                    </Blue>
-                    <Purple>
-                      #fff
-                      <White>
-                        <Strong>;</Strong>
-                      </White>
-                    </Purple>
-                  </div>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>115</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Yellow>{icons[1]}</Yellow>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>116</Number>
-            <Content>
-              <BorderLeft>
-                <br />
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>117</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Pink>
-                    <i>
-                      <Strong>:</Strong> <Green>hover</Green>
-                    </i>
-                  </Pink>
-                  <Yellow>{icons[0]}</Yellow>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>118</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <div>
-                    <Blue>
-                      background-color
-                      <Pink>
-                        <Strong>:</Strong>
-                      </Pink>
-                    </Blue>
-                    <Purple>
-                      #1f242870
-                      <White>
-                        <Strong>;</Strong>
-                      </White>
-                    </Purple>
-                  </div>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>119</Number>
-            <Content>
-              <BorderLeft>
-                <div>
-                  <Yellow>{icons[1]}</Yellow>
-                </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>120</Number>
-            <Content>
-              <BorderLeft>
-                <br />
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>121</Number>
-            <Content>
-              <BorderLeft>
-                <Pink>@media</Pink>
-                <Purple>screen</Purple>
-                <Pink>and</Pink>
-                <Yellow>
-                  {icons[3]}
-                  <Blue>
-                    max-width
-                    <Pink>
-                      <Strong>:</Strong>
-                    </Pink>
-                  </Blue>
-                </Yellow>
-                <Purple>
-                  648
-                  <Pink>
-                    px<Yellow>{icons[4]}</Yellow>
-                  </Pink>
-                </Purple>
-                <White>{icons[0]}</White>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>122</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <div>
-                    <i>
-                      <Pink>
-                        <Strong>: </Strong>
-                      </Pink>
-                      <Green>nth-child</Green>
-                    </i>
-                    <Yellow>
-                      {icons[3]}
-                      <Purple>2</Purple>
-                      {icons[4]}
-                    </Yellow>
-                    <Yellow>{icons[0]}</Yellow>
-                  </div>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>123</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <BorderLeft>
-                    <div>
-                      <Blue>
-                        margin-top
-                        <Pink>
-                          <Strong>:</Strong>
-                        </Pink>
-                      </Blue>
-                      <Purple>
-                        0
-                        <White>
-                          <Strong>;</Strong>
-                        </White>
-                      </Purple>
-                    </div>
-                  </BorderLeft>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>124</Number>
-            <Content>
-              <BorderLeft>
-                <BorderLeft>
-                  <Yellow>{icons[1]}</Yellow>
-                </BorderLeft>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>125</Number>
-            <Content>
-              <BorderLeft>{icons[1]}</BorderLeft>
-            </Content>
-          </section>
-        </>
-      )}
-      <section>
-        <Number>126</Number>
-        <Content>
-          <div>
-            <Yellow>
-              `<White>;</White>
-            </Yellow>
-          </div>
-        </Content>
-      </section>
-      <section>
-        <Number>127</Number>
         <Content>
           <br />
         </Content>
