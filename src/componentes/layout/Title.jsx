@@ -6,7 +6,7 @@ export const Title = ({ children }) => {
 
 const Container = styled.div`
   text-align: center;
-  color: orange;
+  color: red;
 
   h1 {
     padding: 25px 0;

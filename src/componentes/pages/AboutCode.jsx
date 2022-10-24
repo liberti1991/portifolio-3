@@ -469,7 +469,7 @@ export const HomeCode = ({ handlePage }) => {
                                 <White>{icons[10]}</White>
                               </White>
                               <White>
-                              Experiência como desenvolvedor ReactJs 1+ Trabalhei com portais web aonde realizei um clone do Trello<Strong>.</Strong>
+                                Experiência como desenvolvedor ReactJs 1+ Trabalhei com portais web aonde realizei um clone do Trello<Strong>.</Strong>
                               </White>
                               <White>
                                 {icons[11]}
@@ -498,9 +498,67 @@ export const HomeCode = ({ handlePage }) => {
                                 <Pink>p</Pink>
                                 <White>{icons[10]}</White>
                               </White>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>26</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
                               <White>
-                                Rodrigo Liberti, 31 anos - Curitiba/Pr<Strong>.</Strong>
+                                {icons[9]}
+                                <Pink>p</Pink>
+                                <White>{icons[10]}</White>
                               </White>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>27</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
+                              <White>
+                                {icons[9]}
+                                <Pink>p</Pink>
+                                <White>{icons[10]}</White>
+                              </White>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>28</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
                               <White>
                                 {icons[11]}
                                 <Pink>p</Pink>
@@ -515,7 +573,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>22</Number>
+                <Number>29</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -528,9 +586,45 @@ export const HomeCode = ({ handlePage }) => {
                                 <Pink>p</Pink>
                                 <White>{icons[10]}</White>
                               </White>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>30</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
                               <White>
-                                Rodrigo Liberti, 31 anos - Curitiba/Pr<Strong>.</Strong>
+                                {icons[9]}
+                                <Pink>p</Pink>
+                                <White>{icons[10]}</White>
                               </White>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>31</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
                               <White>
                                 {icons[11]}
                                 <Pink>p</Pink>
@@ -544,6 +638,7 @@ export const HomeCode = ({ handlePage }) => {
                   </BorderLeft>
                 </Content>
               </section>
+          
               <section>
                 <Number>23</Number>
                 <Content>
