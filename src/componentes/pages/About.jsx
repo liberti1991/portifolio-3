@@ -111,6 +111,16 @@ const Container = styled.div`
     }
   }
 
+  @media screen and (max-width: 640px) {
+    height: calc(100vh - 90px);
+    overflow: auto;
+    padding-bottom: 15px;
+    > div {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
   @media screen and (max-height: 400px) {
     height: calc(100vh - 90px);
     overflow: auto;
@@ -148,14 +158,14 @@ const CodeButton = styled.div`
   }
 
   @keyframes animate {
-    0%{
+    0% {
       transform: translateX(-100px);
       opacity: 0;
     }
-    50%{
-      opacity: .3;
+    50% {
+      opacity: 0.3;
     }
-    100%{
+    100% {
       transform: translateX(0px);
       opacity: 1;
     }
