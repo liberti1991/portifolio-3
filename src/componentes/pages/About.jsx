@@ -1,34 +1,51 @@
-import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { Title } from "../layout/Title";
-
+import { BsFileEarmarkCode } from "react-icons/bs";
 import { MdDoubleArrow } from "react-icons/md";
 
+import { Title } from "../layout/Title";
+import { HomeCode } from "./AboutCode";
+
 export const About = () => {
+  const [page, pageSet] = useState(true);
+  const handlePage = () => pageSet((previousState) => !previousState);
+
   return (
-    <Container>
-      <Title>
-        <h1>Sobre</h1>
-      </Title>
-      <p>Rodrigo Liberti, 31 anos - Curitiba/Pr.</p>
-      <p>Desenvolvedor Front-End trabalho com ReactJs, atualmente estudando Laravel para me tornar um desenvolvedor Fullstack.</p>
-      <p>Experiência como desenvolvedor ReactJs 1+ Trabalhei com portais web aonde realizei um clone do Trello.</p>
-      <p>
-        Reconhecido por colegas como um profissional com um grande potencial, dedicação e com entregas de qualidade e pontuais, sempre disposto a ajudar os colegas e em constante
-        busca por conhecimento.
-      </p>
-      <p>
-        Cursando desde 2021 <b>Análise e Desenvolvimento de Sistemas</b> onde estou no quarto período.
-      </p>
-      <CodeButton>
-        <NavLink to="/projetos">
-          <MdDoubleArrow />
-          Meus Projetos...
-        </NavLink>
-      </CodeButton>
-    </Container>
+    <>
+      {page ? (
+        <Container>
+          <Title>
+            <h1>Sobre</h1>
+          </Title>
+          <p>Rodrigo Liberti, 31 anos - Curitiba/Pr.</p>
+          <p>Desenvolvedor Front-End trabalho com ReactJs, atualmente estudando Laravel para me tornar um desenvolvedor Fullstack.</p>
+          <p>Experiência como desenvolvedor ReactJs 1+ Trabalhei com portais web aonde realizei um clone do Trello.</p>
+          <p>
+            Reconhecido por colegas como um profissional com um grande potencial, dedicação e com entregas de qualidade e pontuais, sempre disposto a ajudar os colegas e em
+            constante busca por conhecimento.
+          </p>
+          <p>
+            Cursando desde 2021 <b>Análise e Desenvolvimento de Sistemas</b> onde estou no quarto período.
+          </p>
+          <div>
+            <CodeButton onClick={handlePage} role="button">
+              <BsFileEarmarkCode />
+              Ver código fonte...
+            </CodeButton>
+            <CodeButton>
+              <NavLink to="/projetos">
+                <MdDoubleArrow />
+                Meus Projetos...
+              </NavLink>
+            </CodeButton>
+          </div>
+        </Container>
+      ) : (
+        <HomeCode handlePage={handlePage} role="button" />
+      )}
+    </>
   );
 };
 
@@ -37,6 +54,11 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
+
+  > div {
+    display: flex;
+    gap: 20px;
+  }
 
   > p {
     text-align: center;
