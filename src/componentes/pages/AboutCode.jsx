@@ -514,13 +514,9 @@ export const HomeCode = ({ handlePage }) => {
                       <BorderLeft>
                         <BorderLeft>
                           <BorderLeft>
-                            <div>
-                              <White>
-                                {icons[9]}
-                                <Pink>p</Pink>
-                                <White>{icons[10]}</White>
-                              </White>
-                            </div>
+                            <BorderLeft>
+                              <White>Reconhecido por colegas como um profissional com um grande potencial, dedicação e com entregas de qualidade e pontuais,</White>
+                            </BorderLeft>
                           </BorderLeft>
                         </BorderLeft>
                       </BorderLeft>
@@ -536,13 +532,11 @@ export const HomeCode = ({ handlePage }) => {
                       <BorderLeft>
                         <BorderLeft>
                           <BorderLeft>
-                            <div>
+                            <BorderLeft>
                               <White>
-                                {icons[9]}
-                                <Pink>p</Pink>
-                                <White>{icons[10]}</White>
+                                sempre disposto a ajudar os colegas e em constante busca por conhecimento<Strong>.</Strong>
                               </White>
-                            </div>
+                            </BorderLeft>
                           </BorderLeft>
                         </BorderLeft>
                       </BorderLeft>
@@ -584,7 +578,7 @@ export const HomeCode = ({ handlePage }) => {
                               <White>
                                 {icons[9]}
                                 <Pink>p</Pink>
-                                <White>{icons[10]}</White>
+                                {icons[10]}
                               </White>
                             </div>
                           </BorderLeft>
@@ -602,13 +596,15 @@ export const HomeCode = ({ handlePage }) => {
                       <BorderLeft>
                         <BorderLeft>
                           <BorderLeft>
-                            <div>
+                            <BorderLeft>
                               <White>
-                                {icons[9]}
-                                <Pink>p</Pink>
-                                <White>{icons[10]}</White>
+                                Cursando desde 2021 {icons[9]}
+                                <Pink>b</Pink>
+                                {icons[10]} Análise e Desenvolvimento de Sistemas {icons[11]}
+                                <Pink>b</Pink>
+                                {icons[10]} A onde estou no quarto período<Strong>.</Strong>
                               </White>
-                            </div>
+                            </BorderLeft>
                           </BorderLeft>
                         </BorderLeft>
                       </BorderLeft>
@@ -638,9 +634,30 @@ export const HomeCode = ({ handlePage }) => {
                   </BorderLeft>
                 </Content>
               </section>
-          
               <section>
-                <Number>23</Number>
+                <Number>32</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <div>
+                              <White>
+                                {icons[9]}
+                                <Pink>div</Pink>
+                                <White>{icons[10]}</White>
+                              </White>
+                            </div>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>33</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -651,47 +668,21 @@ export const HomeCode = ({ handlePage }) => {
                               <div>
                                 <White>
                                   {icons[9]}
-                                  <Pink>div</Pink>
-                                  <White>{icons[10]}</White>
+                                  <Blue>
+                                    <i>CodeButton</i>
+                                  </Blue>
                                 </White>
+                                <Green>
+                                  <i>onClick</i>
+                                  <Pink>=</Pink>
+                                  <Brown>
+                                    {icons[0]}
+                                    <Green>handlePage</Green>
+                                    <Brown>{icons[1]}</Brown>
+                                  </Brown>
+                                  <White>{icons[10]}</White>
+                                </Green>
                               </div>
-                            </BorderLeft>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>24</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <BorderLeft>
-                              <BorderLeft>
-                                <div>
-                                  <White>
-                                    {icons[9]}
-                                    <Blue>
-                                      <i>CodeButton</i>
-                                    </Blue>
-                                  </White>
-                                  <Green>
-                                    <i>onClick</i>
-                                    <Pink>=</Pink>
-                                    <Brown>
-                                      {icons[0]}
-                                      <Green>handlePage</Green>
-                                      <Brown>{icons[1]}</Brown>
-                                      <White>{icons[10]}</White>
-                                    </Brown>
-                                  </Green>
-                                </div>
-                              </BorderLeft>
                             </BorderLeft>
                           </BorderLeft>
                         </BorderLeft>
