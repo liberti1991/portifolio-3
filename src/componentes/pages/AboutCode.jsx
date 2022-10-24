@@ -680,6 +680,11 @@ export const HomeCode = ({ handlePage }) => {
                                     <Green>handlePage</Green>
                                     <Brown>{icons[1]}</Brown>
                                   </Brown>
+                                </Green>
+                                <Green>
+                                  <i>role</i>
+                                  <Pink>=</Pink>
+                                  <Yellow>"button"</Yellow>
                                   <White>{icons[10]}</White>
                                 </Green>
                               </div>
@@ -692,7 +697,139 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>25</Number>
+                <Number>34</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <BorderLeft>
+                              <BorderLeft>
+                                <div>
+                                  <White>
+                                    {icons[9]}
+                                    <Blue>
+                                      <i>BsFileEarmarkCode</i>
+                                    </Blue>
+                                  </White>
+                                  <White>{icons[12]}</White>
+                                </div>
+                              </BorderLeft>
+                            </BorderLeft>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>35</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <BorderLeft>
+                              <BorderLeft>
+                                <White>
+                                  Ver código fonte<strong>...</strong>
+                                </White>
+                              </BorderLeft>
+                            </BorderLeft>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>36</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <BorderLeft>
+                              <div>
+                                <White>{icons[11]}</White>
+                                <Blue>
+                                  <i>CodeButton</i>
+                                  <White>{icons[10]}</White>
+                                </Blue>
+                              </div>
+                            </BorderLeft>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>37</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <BorderLeft>
+                              <div>
+                                <White>
+                                  {icons[9]}
+                                  <Blue>
+                                    <i>CodeButton</i>
+                                  </Blue>
+                                </White>
+                              </div>
+                            </BorderLeft>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>38</Number>
+                <Content>
+                  <BorderLeft>
+                    <BorderLeft>
+                      <BorderLeft>
+                        <BorderLeft>
+                          <BorderLeft>
+                            <BorderLeft>
+                              <BorderLeft>
+                                <div>
+                                  <White>
+                                    {icons[9]}
+                                    <Blue>
+                                      <i>NavLink</i>
+                                    </Blue>
+                                  </White>
+                                  <Green>
+                                    <i>to</i>
+                                    <Pink>=</Pink>
+                                    <Yellow>"/projetos"</Yellow>
+                                    <White>{icons[10]}</White>
+                                  </Green>
+                                </div>
+                              </BorderLeft>
+                            </BorderLeft>
+                          </BorderLeft>
+                        </BorderLeft>
+                      </BorderLeft>
+                    </BorderLeft>
+                  </BorderLeft>
+                </Content>
+              </section>
+              <section>
+                <Number>39</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -706,7 +843,7 @@ export const HomeCode = ({ handlePage }) => {
                                     <White>
                                       {icons[9]}
                                       <Blue>
-                                        <i>BsFileEarmarkCode</i>
+                                        <i>MdDoubleArrow</i>
                                       </Blue>
                                     </White>
                                     <White>{icons[12]}</White>
@@ -722,7 +859,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>26</Number>
+                <Number>40</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -733,7 +870,7 @@ export const HomeCode = ({ handlePage }) => {
                               <BorderLeft>
                                 <BorderLeft>
                                   <White>
-                                    Ver código fonte<strong>...</strong>
+                                    Meus Projetos<strong>...</strong>
                                   </White>
                                 </BorderLeft>
                               </BorderLeft>
@@ -746,7 +883,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>27</Number>
+                <Number>41</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -758,7 +895,7 @@ export const HomeCode = ({ handlePage }) => {
                                 <div>
                                   <White>{icons[11]}</White>
                                   <Blue>
-                                    <i>CodeButton</i>
+                                    <i>NavLink</i>
                                     <White>{icons[10]}</White>
                                   </Blue>
                                 </div>
@@ -772,7 +909,7 @@ export const HomeCode = ({ handlePage }) => {
                 </Content>
               </section>
               <section>
-                <Number>28</Number>
+                <Number>42</Number>
                 <Content>
                   <BorderLeft>
                     <BorderLeft>
@@ -780,163 +917,13 @@ export const HomeCode = ({ handlePage }) => {
                         <BorderLeft>
                           <BorderLeft>
                             <BorderLeft>
-                              <BorderLeft>
-                                <div>
-                                  <White>
-                                    {icons[9]}
-                                    <Blue>
-                                      <i>CodeButton</i>
-                                    </Blue>
-                                  </White>
-                                </div>
-                              </BorderLeft>
-                            </BorderLeft>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>29</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <BorderLeft>
-                              <BorderLeft>
-                                <BorderLeft>
-                                  <div>
-                                    <White>
-                                      {icons[9]}
-                                      <Blue>
-                                        <i>NavLink</i>
-                                      </Blue>
-                                    </White>
-                                    <Green>
-                                      <i>to</i>
-                                      <Pink>=</Pink>
-                                      <Yellow>"/projetos"</Yellow>
-                                      <White>{icons[10]}</White>
-                                    </Green>
-                                  </div>
-                                </BorderLeft>
-                              </BorderLeft>
-                            </BorderLeft>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>30</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <BorderLeft>
-                              <BorderLeft>
-                                <BorderLeft>
-                                  <BorderLeft>
-                                    <div>
-                                      <White>
-                                        {icons[9]}
-                                        <Blue>
-                                          <i>MdDoubleArrow</i>
-                                        </Blue>
-                                      </White>
-                                      <White>{icons[12]}</White>
-                                    </div>
-                                  </BorderLeft>
-                                </BorderLeft>
-                              </BorderLeft>
-                            </BorderLeft>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>31</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <BorderLeft>
-                              <BorderLeft>
-                                <BorderLeft>
-                                  <BorderLeft>
-                                    <White>
-                                      Meus Projetos<strong>...</strong>
-                                    </White>
-                                  </BorderLeft>
-                                </BorderLeft>
-                              </BorderLeft>
-                            </BorderLeft>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>32</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <BorderLeft>
-                              <BorderLeft>
-                                <BorderLeft>
-                                  <div>
-                                    <White>{icons[11]}</White>
-                                    <Blue>
-                                      <i>NavLink</i>
-                                      <White>{icons[10]}</White>
-                                    </Blue>
-                                  </div>
-                                </BorderLeft>
-                              </BorderLeft>
-                            </BorderLeft>
-                          </BorderLeft>
-                        </BorderLeft>
-                      </BorderLeft>
-                    </BorderLeft>
-                  </BorderLeft>
-                </Content>
-              </section>
-              <section>
-                <Number>33</Number>
-                <Content>
-                  <BorderLeft>
-                    <BorderLeft>
-                      <BorderLeft>
-                        <BorderLeft>
-                          <BorderLeft>
-                            <BorderLeft>
-                              <BorderLeft>
-                                <div>
-                                  <White>{icons[11]}</White>
-                                  <Blue>
-                                    <i>CodeButton</i>
-                                    <White>{icons[10]}</White>
-                                  </Blue>
-                                </div>
-                              </BorderLeft>
+                              <div>
+                                <White>{icons[11]}</White>
+                                <Blue>
+                                  <i>CodeButton</i>
+                                  <White>{icons[10]}</White>
+                                </Blue>
+                              </div>
                             </BorderLeft>
                           </BorderLeft>
                         </BorderLeft>
@@ -1081,6 +1068,12 @@ export const HomeCode = ({ handlePage }) => {
                               <Brown>{icons[0]}</Brown>
                               <Green>handlePage</Green>
                               <Brown>{icons[1]}</Brown>
+                            </Green>
+                            <Green>
+                              <i>role</i>
+                              <Pink>=</Pink>
+                              <Yellow>"button"</Yellow>
+                              <White>{icons[10]}</White>
                             </Green>
                             <White>{icons[12]}</White>
                           </div>

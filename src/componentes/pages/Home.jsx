@@ -36,7 +36,7 @@ export const Home = () => {
           <img src={programmer} alt="programer img" />
         </Container>
       ) : (
-        <HomeCode handlePage={handlePage} role="button" />
+        <HomeCode handlePage={handlePage} role="button"/>
       )}
     </>
   );

@@ -199,7 +199,9 @@ export const HomeCode = ({ handlePage }) => {
                   </Green>
                   <Purple>true</Purple>
                   <Yellow>{icons[4]}</Yellow>
-                  <White><Strong>;</Strong></White>
+                  <White>
+                    <Strong>;</Strong>
+                  </White>
                 </div>
               </BorderLeft>
             </Content>
@@ -234,7 +236,9 @@ export const HomeCode = ({ handlePage }) => {
                     <i>previousState</i>
                     <Orange>{icons[4]}</Orange>
                   </Orange>
-                  <White><Strong>;</Strong></White>
+                  <White>
+                    <Strong>;</Strong>
+                  </White>
                 </div>
               </BorderLeft>
             </Content>
@@ -445,8 +449,13 @@ export const HomeCode = ({ handlePage }) => {
                                       {icons[0]}
                                       <Green>handlePage</Green>
                                       <Brown>{icons[1]}</Brown>
-                                      <White>{icons[10]}</White>
                                     </Brown>
+                                  </Green>
+                                  <Green>
+                                    <i>role</i>
+                                    <Pink>=</Pink>
+                                    <Yellow>"button"</Yellow>
+                                    <White>{icons[10]}</White>
                                   </Green>
                                 </div>
                               </BorderLeft>
@@ -587,6 +596,11 @@ export const HomeCode = ({ handlePage }) => {
                                       <i>to</i>
                                       <Pink>=</Pink>
                                       <Yellow>"/projetos"</Yellow>
+                                    </Green>
+                                    <Green>
+                                      <i>role</i>
+                                      <Pink>=</Pink>
+                                      <Yellow>"button"</Yellow>
                                       <White>{icons[10]}</White>
                                     </Green>
                                   </div>
@@ -848,6 +862,12 @@ export const HomeCode = ({ handlePage }) => {
                               <Brown>{icons[0]}</Brown>
                               <Green>handlePage</Green>
                               <Brown>{icons[1]}</Brown>
+                            </Green>
+                            <Green>
+                              <i>role</i>
+                              <Pink>=</Pink>
+                              <Yellow>"button"</Yellow>
+                              <White>{icons[10]}</White>
                             </Green>
                             <White>{icons[12]}</White>
                           </div>
