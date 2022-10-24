@@ -115,13 +115,14 @@ const Container = styled.div`
     height: calc(100vh - 90px);
     overflow: auto;
     padding-bottom: 15px;
+    
     > div {
       flex-direction: column;
       gap: 0;
     }
   }
 
-  @media screen and (max-height: 400px) {
+  @media screen and (max-height: 450px) {
     height: calc(100vh - 90px);
     overflow: auto;
     padding-bottom: 15px;
