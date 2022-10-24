@@ -1083,7 +1083,7 @@ export const HomeCode = ({ handlePage }) => {
       </section>
       {/* sdgs */}
       <section>
-        <Number>45</Number>
+        <Number>52</Number>
         <Content>
           <div>
             {const1 ? <MdKeyboardArrowDown onClick={handleConst1} role="button" /> : <MdKeyboardArrowRight style={{ opacity: 1 }} onClick={handleConst1} role="button" />}
@@ -1103,7 +1103,7 @@ export const HomeCode = ({ handlePage }) => {
       {const1 && (
         <>
           <section>
-            <Number>46</Number>
+            <Number>53</Number>
             <Content>
               <BorderLeft>
                 <div>
@@ -1114,7 +1114,7 @@ export const HomeCode = ({ handlePage }) => {
                     </Pink>
                   </Blue>
                   <Purple>
-                    grid
+                    flex
                     <White>
                       <Strong>;</Strong>
                     </White>
@@ -1124,21 +1124,18 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>47</Number>
+            <Number>54</Number>
             <Content>
               <BorderLeft>
                 <div>
                   <Blue>
-                    grid-template-columns
+                    flex-direction
                     <Pink>
                       <Strong>:</Strong>
                     </Pink>
                   </Blue>
                   <Purple>
-                    1<Pink>fr</Pink>
-                  </Purple>
-                  <Purple>
-                    1<Pink>fr</Pink>
+                    column
                     <White>
                       <Strong>;</Strong>
                     </White>
@@ -1148,7 +1145,7 @@ export const HomeCode = ({ handlePage }) => {
             </Content>
           </section>
           <section>
-            <Number>48</Number>
+            <Number>55</Number>
             <Content>
               <BorderLeft>
                 <div>
@@ -1168,6 +1165,107 @@ export const HomeCode = ({ handlePage }) => {
               </BorderLeft>
             </Content>
           </section>
+          <section>
+            <Number>56</Number>
+            <Content>
+              <BorderLeft>
+                <div>
+                  <Blue>
+                    padding
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
+                  <Purple>0</Purple>
+                  <Purple>
+                    20
+                    <Pink>
+                      px
+                      <White>
+                        <Strong>;</Strong>
+                      </White>
+                    </Pink>
+                  </Purple>
+                </div>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>57</Number>
+            <Content>
+              <BorderLeft>
+                <br />
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>58</Number>
+            <Content>
+              <BorderLeft>
+                <div>
+                  {icons[10]}
+                  <Pink>div</Pink>
+                  <Yellow>{icons[0]}</Yellow>
+                </div>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>59</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Blue>
+                    display
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
+                  <Purple>
+                    flex
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
+                  </Purple>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>60</Number>
+            <Content>
+              <BorderLeft>
+                <BorderLeft>
+                  <Blue>
+                    gap
+                    <Pink>
+                      <Strong>:</Strong>
+                    </Pink>
+                  </Blue>
+                  <Purple>
+                    20<Pink>px</Pink>
+                    <White>
+                      <Strong>;</Strong>
+                    </White>
+                  </Purple>
+                </BorderLeft>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            <Number>61</Number>
+            <Content>
+              <BorderLeft>
+                <Yellow>{icons[1]}</Yellow>
+              </BorderLeft>
+            </Content>
+          </section>
+          <section>
+            
+          </section>
+          <br />
+          <br />
+          <br />
           <section>
             <Number>49</Number>
             <Content>
@@ -1194,14 +1292,6 @@ export const HomeCode = ({ handlePage }) => {
                     </White>
                   </Purple>
                 </div>
-              </BorderLeft>
-            </Content>
-          </section>
-          <section>
-            <Number>50</Number>
-            <Content>
-              <BorderLeft>
-                <br />
               </BorderLeft>
             </Content>
           </section>
