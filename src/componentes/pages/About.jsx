@@ -130,6 +130,7 @@ const CodeButton = styled.div`
   border: 1px solid #191d20;
   background-color: #1f2428;
   transition: 0.3s;
+  animation: animate 3.5s;
 
   > svg {
     font-size: 18px;
@@ -144,5 +145,19 @@ const CodeButton = styled.div`
 
   :hover {
     background-color: #1f242870;
+  }
+
+  @keyframes animate {
+    0%{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    50%{
+      opacity: .3;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
 `;
