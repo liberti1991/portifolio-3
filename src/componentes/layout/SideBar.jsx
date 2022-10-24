@@ -147,7 +147,6 @@ const SectionTwo = styled.section`
   background: #1f2428;
   width: 75%;
   font-size: 12px;
-  border-right: 1px solid #191d20;
   position: relative;
 
   > div {
