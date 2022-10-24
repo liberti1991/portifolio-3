@@ -63,7 +63,7 @@ const ContentGRid = styled.article`
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: orangered;
+    color: red;
   }
 
   p {
@@ -84,7 +84,7 @@ const ContentGRid = styled.article`
 
       a {
         display: flex;
-        color: orange;
+        color: orangered;
         padding: 10px 30px;
         text-decoration: none;
         cursor: pointer;
@@ -110,7 +110,7 @@ const ImageGRid = styled.article`
   a {
     display: flex;
     justify-content: center;
-    color: orange;
+    color: orangered;
     padding: 15px 0;
     text-decoration: none;
     font-weight: 600;
@@ -133,6 +133,7 @@ const ImageGRid = styled.article`
     a {
       display: none;
     }
+
     svg {
       display: inline;
       width: 20px;
